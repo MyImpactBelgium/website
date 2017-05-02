@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    <url>
+        <loc>http://www.myimpact.space/fr-be/</loc>
+        <xhtml:link href="http://www.myimpact.space/nl-be/" hreflang="nl" rel="alternate"/>
+    </url>
+    <url>
+        <loc>http://www.myimpact.space/nl-be/</loc>
+        <xhtml:link href="http://www.myimpact.space/fr-be/" hreflang="fr" rel="alternate"/>
+    </url>
+</urlset>
