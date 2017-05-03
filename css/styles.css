@@ -18,10 +18,11 @@
     padding: 2rem 4rem;
     color: #fefefe;
 }
-html, body {
+  #map {
     height: 100%;
-}
-
-#map {
+  }
+  html, body {
     height: 100%;
-}
+    margin: 0;
+    padding: 0;
+  }
