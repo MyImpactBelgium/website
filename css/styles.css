@@ -18,6 +18,9 @@
     padding: 2rem 4rem;
     color: #fefefe;
 }
+html, body {
+    height: 100%;
+}
 
 #map {
     height: 100%;
