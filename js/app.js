@@ -18,7 +18,7 @@ $( document ).ready( function() {
 
     var map = new google.maps.Map(document.getElementById('map'), mapOptions);
     //Callout Content
-    var contentString = 'Some address here..';
+    var contentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
     //Set window width + content
     var infowindow = new google.maps.InfoWindow({
       content: contentString,
