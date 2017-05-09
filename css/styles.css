@@ -22,7 +22,17 @@
 .container{
   width: 100%;
   margin: 0 auto;
-  margin-top:50px;
+  /*margin-top:50px;*/
+}
+
+.card-image {
+    position: relative;
+}
+.card-image .icon {
+    position: absolute;
+    top: calc(50% - 1.5em);
+    left: calc(50% - 1.5em);
+    width: 3em;
 }
 
 #map_container{
