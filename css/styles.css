@@ -14,6 +14,10 @@
     background: lightseagreen;
 }
 
+.orbit-slide:nth-of-type(5) .docs-example-orbit-slide {
+    background: MediumVioletRed ;
+}
+
 .docs-example-orbit-slide {
     padding: 2rem 4rem;
     color: #fefefe;
