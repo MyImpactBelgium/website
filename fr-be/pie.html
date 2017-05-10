@@ -9,6 +9,88 @@
 	    <link rel="stylesheet" href="/css/styles.css" />
 	    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+		
+		<!-- CHARTS SCRIPT START -->
+		<script type="text/javascript">
+		window.onload = function () {
+			var chart1 = new CanvasJS.Chart("chartContainer1",
+			{
+				/*title:{
+					text: "U.S Smartphone OS Market Share, Q3 2012",
+					fontFamily: "Impact",
+					fontWeight: "normal"
+				},
+				legend:{
+					verticalAlign: "bottom",
+					horizontalAlign: "center"
+				}, 
+				*/
+				data: [
+				{
+					//startAngle: 45,
+					indexLabelFontSize: 20,
+					indexLabelFontFamily: "HelveticaNeue",
+					indexLabelFontColor: "darkgrey",
+					indexLabelLineColor: "darkgrey",
+					indexLabelPlacement: "outside",
+					type: "doughnut",
+					showInLegend: false,
+					dataPoints: [
+						{  y: 20, legendText:"Crédits aux particuliers", indexLabel: "Crédits aux particuliers" },
+						{  y: 41, legendText:"Crédits aux entreprises", indexLabel: "Crédits aux entreprises" },
+						{  y: 4, legendText:"Projets gournementaux", indexLabel: "Projets gournementaux" },
+						{  y: 6, legendText:"Obligations de l'Etat belge", indexLabel: "Obligations de l'Etat belge" },
+						{  y: 8, legendText:"Obligations et participations", indexLabel: "Obligations et participations" },
+						{  y: 4, legendText:"Immobilisations financières", indexLabel: "Immobilisations financières" },
+						{  y: 5, legendText:"Comptes de régularisation", indexLabel: "Comptes de régularisation" },
+						{  y: 1, legendText:"Charges d'exploitation", indexLabel: "Charges d'exploitation" }
+					]
+				}
+				]
+			});
+			var chart2 = new CanvasJS.Chart("chartContainer2",
+			{
+				/*title:{
+					text: "U.S Smartphone OS Market Share, Q3 2012",
+					fontFamily: "Impact",
+					fontWeight: "normal"
+				},
+				legend:{
+					verticalAlign: "bottom",
+					horizontalAlign: "center"
+				}, 
+				*/
+				data: [
+				{
+					//startAngle: 45,
+					indexLabelFontSize: 20,
+					indexLabelFontFamily: "HelveticaNeue",
+					indexLabelFontColor: "darkgrey",
+					indexLabelLineColor: "darkgrey",
+					indexLabelPlacement: "outside",
+					type: "doughnut",
+					showInLegend: false,
+					dataPoints: [
+						{  y: 20, legendText:"Crédits aux particuliers", indexLabel: "Crédits aux particuliers" },
+						{  y: 41, legendText:"Crédits aux entreprises", indexLabel: "Crédits aux entreprises" },
+						{  y: 4, legendText:"Projets gournementaux", indexLabel: "Projets gournementaux" },
+						{  y: 6, legendText:"Obligations de l'Etat belge", indexLabel: "Obligations de l'Etat belge" },
+						{  y: 8, legendText:"Obligations et participations", indexLabel: "Obligations et participations" },
+						{  y: 4, legendText:"Immobilisations financières", indexLabel: "Immobilisations financières" },
+						{  y: 5, legendText:"Comptes de régularisation", indexLabel: "Comptes de régularisation" },
+						{  y: 1, legendText:"Charges d'exploitation", indexLabel: "Charges d'exploitation" }
+					]
+				}
+				]
+			});
+			chart1.render();
+			chart2.render();
+		}
+		</script>
+		<script type="text/javascript" src="/js/canvasjs.min.js"></script>
+
+		<!-- CHARTS SCRIPT END -->
+		
 		<!-- ANALYTICS START -->
 		<!-- GOOGLE ANALYTICS -->
 		<script>
@@ -59,18 +141,24 @@
 		<section>
 			<div class="row align-center">
 				<div class="small-12 medium-6 large-6 column">
-					<img src="/img/hero-section-bg-img.svg"/> 
+					<br>
+					<div id="chartContainer1" style="height: 300px; width: 100%;"></div>
+					<br>
 				</div>
 				<div class="show-for-medium medium-6 large-6 column align-self-middle">
 					<h4>Comment vos économies sont-elles investies ?</h4> 
-					<p>En 2015, pour chaque tranche de 100 euros d'économies de nos clients, nous avons investi 66 euros dans l'économie belge grâce aux prêts aux particuliers et aux entreprises, et aux projets gouvernementaux. En plus de cela, 6 euros ont été placés en obligations d'Etat belges. Ensemble, cela représente 72% investi dans l’économie belge.</p>
+					<p>En 2015, pour chaque tranche de 100 euros d'économies de nos clients, nous avons investi 66 euros dans l'économie belge grâce aux prêts aux particuliers
+						et aux entreprises, et aux projets gouvernementaux. En plus de cela, 6 euros ont été placés en obligations d'Etat belges.
+						Ensemble, cela représente 72% investi dans l’économie belge.</p>
 					<button class="button js-scroll">Où autour de moi ?</button>
 				</div>
 			</div>
 			<div class="row">
 				<div class="small-12 show-for-small-only small-centered text-center columns">
 					<h1>Comment vos économies sont-elles investies ?</h1>
-					<p>En 2015, pour chaque tranche de 100 euros d'économies de nos clients, nous avons investi 66 euros dans l'économie belge grâce aux prêts aux particuliers et aux entreprises, et aux projets gouvernementaux. En plus de cela, 6 euros ont été placés en obligations d'Etat belges. Ensemble, cela représente 72% investi dans l’économie belge.</p>
+					<p>En 2015, pour chaque tranche de 100 euros d'économies de nos clients, nous avons investi 66 euros dans l'économie belge grâce aux prêts aux particuliers
+						et aux entreprises, et aux projets gouvernementaux. En plus de cela, 6 euros ont été placés en obligations d'Etat belges.
+						Ensemble, cela représente 72% investi dans l’économie belge.</p>
 					<button class="button js-scroll">Où autour de moi ?</button>
 					<br><br>
 				</div>
@@ -114,7 +202,9 @@
 						En investissant dans (entre autres) les écoles, les maisons de retraite, les hôpitaux et les centres de soins, nous voulons contribuer à l'amélioration du bien-être général de la société.</p>
 				</div>
 				<div class="show-for-medium medium-6 large-6 column align-self-middle">
-					<img src="/img/hero-section-bg-img.svg"/> 
+					<br>
+					<div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+					<br>
 				</div>
 				<div class="show-for-medium medium-12 large-12 column align-self-middle">
 					<p><strong>Avertissement:</strong> Ceci est un prototype créé à partir des chiffres de 2015 et qui sont donc susceptibles de changer.</p>
