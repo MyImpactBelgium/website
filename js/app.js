@@ -2,13 +2,30 @@ $(document).foundation();
 
 $( document ).ready( function() {
 
-  var heroBtnQuickfact = $('#hero-btn-quickfact');
+  var linkQuickfact1 = $('#link-quickfact-1');
   var modalQuickfact1 = $('#modal-quickfact-1');
-
-
-
-  heroBtnQuickfact.click(function(event) {
+  var linkQuickfact2 = $('#link-quickfact-2');
+  var modalQuickfact2 = $('#modal-quickfact-2');
+  var linkQuickfact3 = $('#link-quickfact-3');
+  var modalQuickfact3 = $('#modal-quickfact-3');
+  var linkQuickfact4 = $('#link-quickfact-4');
+  var modalQuickfact4 = $('#modal-quickfact-4');
+  var linkQuickfact5 = $('#link-quickfact-5');
+  var modalQuickfact5 = $('#modal-quickfact-5');
+  linkQuickfact1.click(function(event) {
     modalQuickfact1.foundation('open');
+  });
+  linkQuickfact2.click(function(event) {
+    modalQuickfact2.foundation('open');
+  });
+  linkQuickfact3.click(function(event) {
+    modalQuickfact3.foundation('open');
+  });
+  linkQuickfact4.click(function(event) {
+    modalQuickfact4.foundation('open');
+  });
+  linkQuickfact5.click(function(event) {
+    modalQuickfact5.foundation('open');
   });
 
 
