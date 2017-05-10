@@ -9,6 +9,50 @@
 	    <link rel="stylesheet" href="/css/styles.css" />
 	    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+	
+		<!-- CHARTS SCRIPT END -->
+		<script type="text/javascript">
+			window.onload = function () {
+			var chart = new CanvasJS.Chart("chartContainer",
+			{
+				title:{
+					text: "U.S Smartphone OS Market Share, Q3 2012",
+					fontFamily: "Impact",
+					fontWeight: "normal"
+				},
+
+				legend:{
+					verticalAlign: "bottom",
+					horizontalAlign: "center"
+				},
+				data: [
+				{
+					//startAngle: 45,
+					indexLabelFontSize: 20,
+					indexLabelFontFamily: "Garamond",
+					indexLabelFontColor: "darkgrey",
+					indexLabelLineColor: "darkgrey",
+					indexLabelPlacement: "outside",
+					type: "doughnut",
+					showInLegend: true,
+					dataPoints: [
+						{  y: 53.37, legendText:"Android 53%", indexLabel: "Android 53%" },
+						{  y: 35.0, legendText:"iOS 35%", indexLabel: "Apple iOS 35%" },
+						{  y: 7, legendText:"Blackberry 7%", indexLabel: "Blackberry 7%" },
+						{  y: 2, legendText:"Windows 2%", indexLabel: "Windows Phone 2%" },
+						{  y: 5, legendText:"Others 5%", indexLabel: "Others 5%" }
+					]
+				}
+				]
+			});
+
+			chart.render();
+		}
+		</script>
+		<script type="text/javascript" src="/assets/script/canvasjs.min.js"></script>
+
+		<!-- CHARTS SCRIPT END -->
+		
 		<!-- ANALYTICS START -->
 		<!-- GOOGLE ANALYTICS -->
 		<script>
@@ -56,7 +100,8 @@
 		<section>
 			<div class="row align-center">
 				<div class="small-12 medium-6 large-6 column">
-					<img src="/img/hero-section-bg-img.svg"/> 
+					<!-- <img src="/img/hero-section-bg-img.svg"/> -->
+					<div id="chartContainer" style="height: 300px; width: 100%;"></div>
 				</div>
 				<div class="show-for-medium medium-6 large-6 column align-self-middle">
 					<h4>72% DE L'EPARGNE EST INVESTIE DANS L'ECONOMIE BELGE</h4> 
