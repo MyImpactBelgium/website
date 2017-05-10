@@ -63,7 +63,7 @@ $( document ).ready( function() {
 
 
     /*  TEMPLATE MARKER BLOCK */
-    var roomerLink = _langPath + "heros/" + "test.html"
+    var roomerLink = _langPath + "heroes/" + "test.html"
     var contentString = 'Some <a href="test"> address </a> here..';
     //Set window width + content
     var infowindow = new google.maps.InfoWindow({
@@ -85,8 +85,8 @@ $( document ).ready( function() {
 
     /*  ROOMER BLOCK */
     
-    var roomerLink = _langPath + "heros/" + "roomer.html"
-    var roomerContentString = 'Roomer <br> Beverage producer<br><a href=roomerLink> address </a> here..';
+    var roomerLink = _langPath + "heroes/" + "roomer.html"
+    var roomerContentString = 'Roomer <br>Beverage producer<br><a href=roomerLink>Details</a>';
     //Set window width + content
     var infowindow = new google.maps.InfoWindow({
       content: roomerContentString,
@@ -107,8 +107,8 @@ $( document ).ready( function() {
 
     /*  SAO BLOCK */
     
-    var roomerLink = _langPath + "heros/" + "sao-paolo.html"
-    var saoContentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
+    var saoLink = _langPath + "heroes/" + "sao-paolo.html"
+    var saoContentString = 'Sao Paulo <br>Tea & coffee seller<br><a href=saoLink class="button">Details</a>';
     //Set window width + content
     var infowindow = new google.maps.InfoWindow({
       content: saoContentString,
