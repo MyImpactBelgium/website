@@ -57,7 +57,12 @@
 	color: black;
 }
 
-.dropdown.menu {
+ul.dropdown.menu {
+	background-color: white;
+	color: black;
+}
+
+li.menu {
 	background-color: white;
 	color: black;
 }
