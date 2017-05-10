@@ -2,8 +2,16 @@ $(document).foundation();
 
 $( document ).ready( function() {
 
+  var heroBtnQuickfact = $('#hero-btn-quickfact');
+  var modalQuickfact1 = $('#modal-quickfact-1');
 
-  
+
+
+  heroBtnQuickfact.click(function(event) {
+    modalQuickfact1.foundation('open');
+  });
+
+
   //Google Maps JS
   //Set Map
   function initialize() {
