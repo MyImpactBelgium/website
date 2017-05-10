@@ -40,7 +40,7 @@
         overflow:auto;
     }
 
-/*Menu & Navigation*/
+/* Menu & Navigation */
 
 .title-bar {
 	background-color: white;
@@ -60,6 +60,16 @@
 .menu {
 	background-color: white;
 	color: black;
+}
+
+/* IMAGES */
+
+.logo-splash {
+	padding: 50px 50px 50px 50px ;
+}
+
+.logo-menu {
+	padding-right: 20px ;
 }
 
 .container{
