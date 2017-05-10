@@ -30,6 +30,11 @@ $( document ).ready( function() {
 
 
   //Google Maps JS
+  
+  //Logic to point to correct lang
+  
+  var _langPath = window.location.pathname.substr(0,7);
+  
   //Set Map
   function initialize() {
       var myLatlng = new google.maps.LatLng(51.0516843,3.7132496);
@@ -58,8 +63,8 @@ $( document ).ready( function() {
 
 
     /*  TEMPLATE MARKER BLOCK */
-
-    var contentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
+    var roomerLink = _langPath + "heros/" + "test.html"
+    var contentString = 'Some <a href="test"> address </a> here..';
     //Set window width + content
     var infowindow = new google.maps.InfoWindow({
       content: contentString,
@@ -79,8 +84,9 @@ $( document ).ready( function() {
     });
 
     /*  ROOMER BLOCK */
-
-    var roomerContentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
+    
+    var roomerLink = _langPath + "heros/" + "roomer.html"
+    var roomerContentString = 'Roomer <br> Beverage producer<br><a href=roomerLink> address </a> here..';
     //Set window width + content
     var infowindow = new google.maps.InfoWindow({
       content: roomerContentString,
@@ -100,7 +106,8 @@ $( document ).ready( function() {
     });
 
     /*  SAO BLOCK */
-
+    
+    var roomerLink = _langPath + "heros/" + "sao-paolo.html"
     var saoContentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
     //Set window width + content
     var infowindow = new google.maps.InfoWindow({
