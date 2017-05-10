@@ -40,7 +40,7 @@
 .inner {
     margin-left: auto;
     margin-right: auto; 
-    width: /*whatever width you want*/;
+    width: 100%;
 }
 
 /*Menu & Navigation*/
@@ -53,7 +53,7 @@
 	background-color: white;
 }
 
-.top-bar {
+.top-bar-right {
 	background-color: white;
 }
 
