@@ -61,7 +61,10 @@
 				<div class="show-for-medium medium-6 large-6 column align-self-middle">
 					<h4>72% DE L'EPARGNE EST INVESTIE DANS L'ECONOMIE BELGE</h4> 
 					<a href="/fr-be/pie.html" class="button success">Découvrez comment</a>
-					<a data-open="quickfact1" class="button success">Découvrez comment</a>
+          				<a href="#" id="hero-btn-download-contract" class="button warning" data-open="quickfact1" aria-controls="quickfact1" aria-haspopup="true" tabindex="0">
+					    DOWNLOAD HIER JE CONTRACT
+					  </a>          
+
 				</div>
 			</div>
 			<div class="row">
@@ -207,6 +210,17 @@
 		<script src="/js/vendor/foundation.min.js"></script>
 		<script src="/js/app.js"></script>
 	<!-- MODALS START -->
+<div class="reveal-overlay">
+	<div class="reveal" id="quickfact1" data-reveal="pm2ukx-reveal" role="dialog" aria-hidden="true" data-yeti-box="quickfact1" data-resize="quickfact1" data-events="resize" style="top: 63px;">
+
+        <h3>Ja, stuur mij het contract!</h3>
+		
+        <button class="close-button" data-close="" aria-label="Close modal" type="button" id="modal-email-btn-close">
+          <span aria-hidden="true">×</span>
+        </button>
+    </div>
+</div>
+	<!--  
 	<div class="reveal" id="quickfact1" data-reveal>
 	  <h1>Awesome. I Have It.</h1>
 	  <p class="lead">Your couch. It is mine.</p>
@@ -215,7 +229,8 @@
 	    <span aria-hidden="true">&times;</span>
 	  </button>
 	</div>
-	
+	-->
+		
 	<!-- MODALS START -->
 	</body>
 </html>
