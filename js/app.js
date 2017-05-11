@@ -154,7 +154,7 @@ $( document ).ready( function() {
     var roggeLink = _langPath + "heroes/" + "rogge.html"
     var roggeContentString = 'Rogge<br>Cooking accessories<br><a href="'+roggeLink+'">Details</a>';
     //Set window width + content
-    var infowindow = new google.maps.InfoWindow({
+    var roggeInfowindow = new google.maps.InfoWindow({
       content: roggeContentString,
       maxWidth: 500
     });
@@ -173,9 +173,10 @@ $( document ).ready( function() {
     
     /*  HA BLOCK */
 
-    var haContentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
+    var haLink = _langPath + "heroes/" + "ha.html"
+    var haContentString = 'Brasserie Ha<br>Brasserie Restaurant<br><a href="'+haLink+'">Details</a>';
     //Set window width + content
-    var infowindow = new google.maps.InfoWindow({
+    var haInfowindow = new google.maps.InfoWindow({
       content: haContentString,
       maxWidth: 500
     });
@@ -193,10 +194,11 @@ $( document ).ready( function() {
     });
     
     /*  JANS BLOCK */
-
-    var jansContentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
+    
+    var jansLink = _langPath + "heroes/" + "janssens.html"
+    var jansContentString = 'Janssens<br>Fabrics & Tailoring<br><a href="'+jansLink+'">Details</a>';
     //Set window width + content
-    var infowindow = new google.maps.InfoWindow({
+    var jansInfowindow = new google.maps.InfoWindow({
       content: jansContentString,
       maxWidth: 500
     });
@@ -215,9 +217,10 @@ $( document ).ready( function() {
     
     /*  PAIN BLOCK */
 
-    var painContentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
+    var painLink = _langPath + "heroes/" + "pain-perdu.html"
+    var painContentString = 'Pain perdu<br>Breakfast Lunch Restaurant<br><a href="'+painLink+'">Details</a>';
     //Set window width + content
-    var infowindow = new google.maps.InfoWindow({
+    var painInfowindow = new google.maps.InfoWindow({
       content: painContentString,
       maxWidth: 500
     });
@@ -236,9 +239,10 @@ $( document ).ready( function() {
     
     /*  HINK BLOCK */
 
-    var hinkContentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
+    var hinkLink = _langPath + "heroes/" + "hinkelspel.html"
+    var hinkContentString = 'Hinkelspel<br>Cooperative cheesemaker<br><a href="'+hinkLink+'">Details</a>';
     //Set window width + content
-    var infowindow = new google.maps.InfoWindow({
+    var hinkInfowindow = new google.maps.InfoWindow({
       content: hinkContentString,
       maxWidth: 500
     });
@@ -257,9 +261,10 @@ $( document ).ready( function() {
     
     /*  SEVENS BLOCK */
 
-    var sevensContentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
+    var sevensLink = _langPath + "heroes/" + "sevens.html"
+    var sevensContentString = 'Hinkelspel<br>Cooperative cheesemaker<br><a href="'+sevensLink+'">Details</a>';
     //Set window width + content
-    var infowindow = new google.maps.InfoWindow({
+    var sevensInfowindow = new google.maps.InfoWindow({
       content: sevensContentString,
       maxWidth: 500
     });
