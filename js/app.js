@@ -62,7 +62,8 @@ $( document ).ready( function() {
 
 
 
-    /*  TEMPLATE MARKER BLOCK */
+    /*  TEMPLATE MARKER BLOCK
+    
     var roomerLink = _langPath + "heroes/" + "test.html"
     var contentString = 'Some <a href="test"> address </a> here..';
     //Set window width + content
@@ -78,17 +79,19 @@ $( document ).ready( function() {
       icon: imagePath,
       title: 'image title'
     });
-
+    
     google.maps.event.addListener(marker, 'click', function() {
       infowindow.open(map,marker);
     });
 
+    */
+
     /*  ROOMER BLOCK */
     
     var roomerLink = _langPath + "heroes/" + "roomer.html"
-    var roomerContentString = 'Roomer <br>Beverage producer<br><a href=roomerLink>Details</a>';
+    var roomerContentString = 'Roomer <br>Beverage producer<br><a href="'+roomerLink+'">Details</a>';
     //Set window width + content
-    var infowindow = new google.maps.InfoWindow({
+    var roomerInfowindow = new google.maps.InfoWindow({
       content: roomerContentString,
       maxWidth: 500
     });
@@ -102,15 +105,15 @@ $( document ).ready( function() {
     });
 
     google.maps.event.addListener(roomerMarker, 'click', function() {
-      infowindow.open(map,roomerMarker);
+      roomerInfowindow.open(map,roomerMarker);
     });
 
     /*  SAO BLOCK */
     
     var saoLink = _langPath + "heroes/" + "sao-paolo.html"
-    var saoContentString = 'Sao Paulo <br>Tea & coffee seller<br><a href=saoLink class="button">Details</a>';
+    var saoContentString = 'Sao Paulo <br>Tea & coffee seller<br><a href="'+saoLink+'" class="button">Details</a>';
     //Set window width + content
-    var infowindow = new google.maps.InfoWindow({
+    var saoInfowindow = new google.maps.InfoWindow({
       content: saoContentString,
       maxWidth: 500
     });
@@ -124,14 +127,15 @@ $( document ).ready( function() {
     });
 
     google.maps.event.addListener(SaoMarker, 'click', function() {
-      infowindow.open(map,SaoMarker);
+      saoInfowindow.open(map,SaoMarker);
     });
 
     /*  ALIX BLOCK */
 
-    var alixContentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
+    var alixLink = _langPath + "heroes/" + "alix.html"
+    var alixContentString = 'Alix<br>Lunchs & parties<br> <a href="'+alixLink+'">Details</a>';
     //Set window width + content
-    var infowindow = new google.maps.InfoWindow({
+    var alixInfowindow = new google.maps.InfoWindow({
       content: alixContentString,
       maxWidth: 500
     });
@@ -145,14 +149,15 @@ $( document ).ready( function() {
     });
 
     google.maps.event.addListener(AlixMarker, 'click', function() {
-      infowindow.open(map,AlixMarker);
+      alixInfowindow.open(map,AlixMarker);
     });
     
     /*  ROGGE BLOCK */
 
-    var roggeContentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
+    var roggeLink = _langPath + "heroes/" + "rogge.html"
+    var roggeContentString = 'Rogge<br>Cooking accessories<br><a href="'+roggeLink+'">Details</a>';
     //Set window width + content
-    var infowindow = new google.maps.InfoWindow({
+    var roggeInfowindow = new google.maps.InfoWindow({
       content: roggeContentString,
       maxWidth: 500
     });
@@ -166,14 +171,15 @@ $( document ).ready( function() {
     });
 
     google.maps.event.addListener(RoggeMarker, 'click', function() {
-      infowindow.open(map,RoggeMarker);
+      roggeInfowindow.open(map,RoggeMarker);
     });
     
     /*  HA BLOCK */
 
-    var haContentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
+    var haLink = _langPath + "heroes/" + "ha.html"
+    var haContentString = 'Brasserie Ha<br>Brasserie Restaurant<br><a href="'+haLink+'">Details</a>';
     //Set window width + content
-    var infowindow = new google.maps.InfoWindow({
+    var haInfowindow = new google.maps.InfoWindow({
       content: haContentString,
       maxWidth: 500
     });
@@ -187,14 +193,15 @@ $( document ).ready( function() {
     });
 
     google.maps.event.addListener(HaMarker, 'click', function() {
-      infowindow.open(map,HaMarker);
+      haInfowindow.open(map,HaMarker);
     });
     
     /*  JANS BLOCK */
-
-    var jansContentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
+    
+    var jansLink = _langPath + "heroes/" + "janssens.html"
+    var jansContentString = 'Janssens<br>Fabrics & Tailoring<br><a href="'+jansLink+'">Details</a>';
     //Set window width + content
-    var infowindow = new google.maps.InfoWindow({
+    var jansInfowindow = new google.maps.InfoWindow({
       content: jansContentString,
       maxWidth: 500
     });
@@ -208,14 +215,15 @@ $( document ).ready( function() {
     });
 
     google.maps.event.addListener(JansMarker, 'click', function() {
-      infowindow.open(map,JansMarker);
+      jansInfowindow.open(map,JansMarker);
     });
     
     /*  PAIN BLOCK */
 
-    var painContentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
+    var painLink = _langPath + "heroes/" + "pain-perdu.html"
+    var painContentString = 'Pain perdu<br>Breakfast Lunch Restaurant<br><a href="'+painLink+'">Details</a>';
     //Set window width + content
-    var infowindow = new google.maps.InfoWindow({
+    var painInfowindow = new google.maps.InfoWindow({
       content: painContentString,
       maxWidth: 500
     });
@@ -229,14 +237,15 @@ $( document ).ready( function() {
     });
 
     google.maps.event.addListener(PainMarker, 'click', function() {
-      infowindow.open(map,PainMarker);
+      painInfowindow.open(map,PainMarker);
     });
     
     /*  HINK BLOCK */
 
-    var hinkContentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
+    var hinkLink = _langPath + "heroes/" + "hinkelspel.html"
+    var hinkContentString = 'Hinkelspel<br>Cooperative cheesemaker<br><a href="'+hinkLink+'">Details</a>';
     //Set window width + content
-    var infowindow = new google.maps.InfoWindow({
+    var hinkInfowindow = new google.maps.InfoWindow({
       content: hinkContentString,
       maxWidth: 500
     });
@@ -250,14 +259,15 @@ $( document ).ready( function() {
     });
 
     google.maps.event.addListener(HinkMarker, 'click', function() {
-      infowindow.open(map,HinkMarker);
+      hinkInfowindow.open(map,HinkMarker);
     });
     
     /*  SEVENS BLOCK */
 
-    var sevensContentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
+    var sevensLink = _langPath + "heroes/" + "sevens.html"
+    var sevensContentString = 'Hinkelspel<br>Cooperative cheesemaker<br><a href="'+sevensLink+'">Details</a>';
     //Set window width + content
-    var infowindow = new google.maps.InfoWindow({
+    var sevensInfowindow = new google.maps.InfoWindow({
       content: sevensContentString,
       maxWidth: 500
     });
@@ -271,7 +281,7 @@ $( document ).ready( function() {
     });
     
     google.maps.event.addListener(SevensMarker, 'click', function() {
-      infowindow.open(map,SevensMarker);
+      sevensInfowindow.open(map,SevensMarker);
     });
     
     
