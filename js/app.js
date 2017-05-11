@@ -111,7 +111,7 @@ $( document ).ready( function() {
     /*  SAO BLOCK */
     
     var saoLink = _langPath + "heroes/" + "sao-paolo.html"
-    var saoContentString = 'Sao Paulo <br>Tea & coffee seller<br><a href="'+saoLink+'" class="button">Details</a>';
+    var saoContentString = 'Sao Paulo <br>Tea & coffee seller<br><a href="'+saoLink+'">Details</a>';
     //Set window width + content
     var saoInfowindow = new google.maps.InfoWindow({
       content: saoContentString,
