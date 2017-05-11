@@ -56,26 +56,18 @@
 	background-color: white;
 	color: black;
 }
+.menu-icon:after {
+    background: black;
+    box-shadow: 0 7px 0 black, 0 14px 0 black;
 
+}
 ul.dropdown.menu {
 	background-color: white;
 	color: black;
 }
 
-li.menu {
-	background-color: white;
-	color: black;
-}
 
-/* IMAGES */
 
-.logo-splash {
-	padding: 50px 50px 50px 50px ;
-}
-
-.logo-menu {
-	padding-right: 20px ;
-}
 
 .container{
   width: 100%;
