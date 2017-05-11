@@ -249,7 +249,7 @@
 
 
 <!-- LOCAL ENTREPRENEURS MAP -->		
-		
+	<a name="map"></a>	
 	
 	<div class="row align-center">
 	<h4>LES ENTREPRISES ET INITIATIVES QUE NOUS SOUTENONS AUTOUR DE VOUS</h4>
@@ -429,5 +429,17 @@
 		<script src="/js/vendor/what-input.js"></script>
 		<script src="/js/vendor/foundation.min.js"></script>
 		<script src="/js/app.js"></script>
+		<!-- Smooth scrolling -->
+		<script src="/js/smoothscroll.js"></script>
+		<script>
+		    // add event listener on load
+		    window.addEventListener('load', function() {
+		      // scroll into view
+		      document.querySelector('.js-scroll').addEventListener('click', function(e) {
+			e.preventDefault();
+			document.querySelector('.map').scrollIntoView({ behavior: 'smooth' });
+		      });
+		    });
+		  </script>
 	</body>
 </html>
