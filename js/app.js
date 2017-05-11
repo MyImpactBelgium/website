@@ -62,7 +62,8 @@ $( document ).ready( function() {
 
 
 
-    /*  TEMPLATE MARKER BLOCK */
+    /*  TEMPLATE MARKER BLOCK
+    
     var roomerLink = _langPath + "heroes/" + "test.html"
     var contentString = 'Some <a href="test"> address </a> here..';
     //Set window width + content
@@ -78,10 +79,12 @@ $( document ).ready( function() {
       icon: imagePath,
       title: 'image title'
     });
-
+    
     google.maps.event.addListener(marker, 'click', function() {
       infowindow.open(map,marker);
     });
+
+    */
 
     /*  ROOMER BLOCK */
     
@@ -102,7 +105,7 @@ $( document ).ready( function() {
     });
 
     google.maps.event.addListener(roomerMarker, 'click', function() {
-      infowindow.open(map,roomerMarker);
+      roomerInfowindow.open(map,roomerMarker);
     });
 
     /*  SAO BLOCK */
@@ -124,7 +127,7 @@ $( document ).ready( function() {
     });
 
     google.maps.event.addListener(SaoMarker, 'click', function() {
-      infowindow.open(map,SaoMarker);
+      saoInfowindow.open(map,SaoMarker);
     });
 
     /*  ALIX BLOCK */
@@ -146,7 +149,7 @@ $( document ).ready( function() {
     });
 
     google.maps.event.addListener(AlixMarker, 'click', function() {
-      infowindow.open(map,AlixMarker);
+      alixInfowindow.open(map,AlixMarker);
     });
     
     /*  ROGGE BLOCK */
@@ -168,7 +171,7 @@ $( document ).ready( function() {
     });
 
     google.maps.event.addListener(RoggeMarker, 'click', function() {
-      infowindow.open(map,RoggeMarker);
+      roggeInfowindow.open(map,RoggeMarker);
     });
     
     /*  HA BLOCK */
@@ -190,7 +193,7 @@ $( document ).ready( function() {
     });
 
     google.maps.event.addListener(HaMarker, 'click', function() {
-      infowindow.open(map,HaMarker);
+      haInfowindow.open(map,HaMarker);
     });
     
     /*  JANS BLOCK */
@@ -212,7 +215,7 @@ $( document ).ready( function() {
     });
 
     google.maps.event.addListener(JansMarker, 'click', function() {
-      infowindow.open(map,JansMarker);
+      jansInfowindow.open(map,JansMarker);
     });
     
     /*  PAIN BLOCK */
@@ -234,7 +237,7 @@ $( document ).ready( function() {
     });
 
     google.maps.event.addListener(PainMarker, 'click', function() {
-      infowindow.open(map,PainMarker);
+      painInfowindow.open(map,PainMarker);
     });
     
     /*  HINK BLOCK */
@@ -256,7 +259,7 @@ $( document ).ready( function() {
     });
 
     google.maps.event.addListener(HinkMarker, 'click', function() {
-      infowindow.open(map,HinkMarker);
+      hinkInfowindow.open(map,HinkMarker);
     });
     
     /*  SEVENS BLOCK */
@@ -278,7 +281,7 @@ $( document ).ready( function() {
     });
     
     google.maps.event.addListener(SevensMarker, 'click', function() {
-      infowindow.open(map,SevensMarker);
+      sevensInfowindow.open(map,SevensMarker);
     });
     
     
