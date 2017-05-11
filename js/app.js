@@ -50,7 +50,7 @@ $( document ).ready( function() {
     
       var imagePath = 'http://m.schuepfen.ch/icons/helveticons/black/60/Pin-location.png'
       var mapOptions = {
-        zoom: 12,
+        zoom: 14,
         center: myLatlng,
         scrollwheel: false, 
         mapTypeId: google.maps.MapTypeId.ROADMAP
