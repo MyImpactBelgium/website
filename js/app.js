@@ -86,9 +86,9 @@ $( document ).ready( function() {
     /*  ROOMER BLOCK */
     
     var roomerLink = _langPath + "heroes/" + "roomer.html"
-    var roomerContentString = 'Roomer <br>Beverage producer<br><a href=roomerLink>Details</a>';
+    var roomerContentString = 'Roomer <br>Beverage producer<br><a href="'+roomerLink+'">Details</a>';
     //Set window width + content
-    var infowindow = new google.maps.InfoWindow({
+    var roomerInfowindow = new google.maps.InfoWindow({
       content: roomerContentString,
       maxWidth: 500
     });
@@ -108,9 +108,9 @@ $( document ).ready( function() {
     /*  SAO BLOCK */
     
     var saoLink = _langPath + "heroes/" + "sao-paolo.html"
-    var saoContentString = 'Sao Paulo <br>Tea & coffee seller<br><a href=saoLink class="button">Details</a>';
+    var saoContentString = 'Sao Paulo <br>Tea & coffee seller<br><a href="'+saoLink+'" class="button">Details</a>';
     //Set window width + content
-    var infowindow = new google.maps.InfoWindow({
+    var saoInfowindow = new google.maps.InfoWindow({
       content: saoContentString,
       maxWidth: 500
     });
@@ -129,9 +129,10 @@ $( document ).ready( function() {
 
     /*  ALIX BLOCK */
 
-    var alixContentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
+    var alixLink = _langPath + "heroes/" + "alix.html"
+    var alixContentString = 'Alix<br>Lunchs & parties<br> <a href="'+alixLink+'">Details</a>';
     //Set window width + content
-    var infowindow = new google.maps.InfoWindow({
+    var alixInfowindow = new google.maps.InfoWindow({
       content: alixContentString,
       maxWidth: 500
     });
@@ -150,7 +151,8 @@ $( document ).ready( function() {
     
     /*  ROGGE BLOCK */
 
-    var roggeContentString = 'Some <a href="http://www.youtube.com"> address </a> here..';
+    var roggeLink = _langPath + "heroes/" + "rogge.html"
+    var roggeContentString = 'Rogge<br>Cooking accessories<br><a href="'+roggeLink+'">Details</a>';
     //Set window width + content
     var infowindow = new google.maps.InfoWindow({
       content: roggeContentString,
