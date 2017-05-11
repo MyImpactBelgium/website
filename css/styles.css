@@ -4,6 +4,13 @@ body{
 
 h1, h2, h3, h4 {
     font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+
 }
 
 .orbit-slide:nth-of-type(1) .docs-example-orbit-slide {
@@ -54,6 +61,7 @@ h1, h2, h3, h4 {
   background: url("/img/hero-section-image.jpg") 50% no-repeat;
   background-size: cover;
   height: 60vh;
+  position: relative;
   text-align: center;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -67,7 +75,9 @@ h1, h2, h3, h4 {
 }
 
 .hero-section .hero-section-text {
+  width: 80vw;
   color: #fefefe;
+  
   text-shadow: 1px 1px 2px #0a0a0a;
 }
 
@@ -130,4 +140,82 @@ ul.dropdown.menu {
     padding-bottom: 35%;
     padding-top: 30px;
     position: relative;
+}
+
+
+
+@-moz-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  40% {
+    -moz-transform: translateY(-30px);
+    -ms-transform: translateY(-30px);
+    -webkit-transform: translateY(-30px);
+    transform: translateY(-30px);
+  }
+  60% {
+    -moz-transform: translateY(-15px);
+    -ms-transform: translateY(-15px);
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+  }
+}
+.button {
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    
+}
+
+.button.success, .button.success:hover {
+    color: white;    
+}
+
+.pin {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  margin-left: -15px;
+  width: 30px;
+  height: 30px;
+  background-image: url('/img/pin.svg');
+  background-size: contain;
+}
+
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
 }
