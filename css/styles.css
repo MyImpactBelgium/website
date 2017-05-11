@@ -1,3 +1,11 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+}
+
 .orbit-slide:nth-of-type(1) .docs-example-orbit-slide {
     background: dodgerblue;
 }
@@ -39,6 +47,30 @@
         max-height:100%;
         overflow:auto;
     }
+
+
+
+.hero-section {
+  background: url("/img/hero-section-image.jpg") 50% no-repeat;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero-section .hero-section-text {
+  color: #fefefe;
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
+
 
 /* Menu & Navigation */
 
@@ -95,7 +127,7 @@ ul.dropdown.menu {
 #map{
     height: 0;
     overflow: hidden;
-    padding-bottom: 22.25%;
+    padding-bottom: 35%;
     padding-top: 30px;
     position: relative;
 }
