@@ -92,7 +92,9 @@ li.menu {
     left: calc(50% - 1.5em);
     width: 3em;
 }
-
+.myimpact-logo {
+    width: 2em;
+}
 #map_container{
   position: relative;
 }
