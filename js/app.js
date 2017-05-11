@@ -265,7 +265,7 @@ $( document ).ready( function() {
     /*  SEVENS BLOCK */
 
     var sevensLink = _langPath + "heroes/" + "sevens.html"
-    var sevensContentString = 'Hinkelspel<br>Cooperative cheesemaker<br><a href="'+sevensLink+'">Details</a>';
+    var sevensContentString = 'Sevens<br>Leather and shoes<br><a href="'+sevensLink+'">Details</a>';
     //Set window width + content
     var sevensInfowindow = new google.maps.InfoWindow({
       content: sevensContentString,
