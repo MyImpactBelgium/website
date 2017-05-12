@@ -86,6 +86,7 @@ h5 {
   background-size: cover;
   height: 60vh;
   padding-left: 50px;
+  padding-top: 50px;
   position: relative;
   text-align: left;
   display: -webkit-flex;
