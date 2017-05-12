@@ -87,11 +87,11 @@ h5 {
 }
 
 .sri-section {
-  background: black url("/img/plant-hands-wide-medium.png") 50% no-repeat;
+  background: black url("/img/plant-hands-wide-medium.png") 50% repeat-y;
   background-size: cover;
   height: 60vh;
   padding-left: 50px;
-  padding-top: 50px;
+  padding-top: 30px;
   margin-bottom: 2em;
   position: relative;
   text-align: left;
