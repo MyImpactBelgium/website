@@ -58,7 +58,7 @@ h5 {
 
 
 .hero-section {
-  background: url("/img/hero-section-image.jpg") 50% no-repeat;
+  background: black url("/img/hero-section-image.jpg") 50% no-repeat;
   background-size: cover;
   height: 60vh;
   position: relative;
@@ -82,9 +82,10 @@ h5 {
 }
 
 .sri-section {
-  background: url("/img/plant-hands-wide-medium.png") 50% no-repeat;
+  background: black url("/img/plant-hands-wide-medium.png") 50% no-repeat;
   background-size: cover;
   height: 60vh;
+  padding-left: 50px;
   position: relative;
   text-align: left;
   display: -webkit-flex;
