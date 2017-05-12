@@ -60,6 +60,7 @@ h5 {
 .hero-section {
   background: black url("/img/hero-section-image.jpg") 50% no-repeat;
   background-size: cover;
+  margin-bottom: 2em;
   height: 60vh;
   position: relative;
   text-align: center;
@@ -81,12 +82,17 @@ h5 {
   text-shadow: 1px 1px 2px #0a0a0a;
 }
 
+.carousel, .map-section{
+  margin-bottom: 2em;
+}
+
 .sri-section {
   background: black url("/img/plant-hands-wide-medium.png") 50% no-repeat;
   background-size: cover;
   height: 60vh;
   padding-left: 50px;
   padding-top: 50px;
+  margin-bottom: 2em;
   position: relative;
   text-align: left;
   display: -webkit-flex;
