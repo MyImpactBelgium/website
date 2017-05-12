@@ -81,6 +81,29 @@ h5 {
   text-shadow: 1px 1px 2px #0a0a0a;
 }
 
+.sri-section {
+  background: url("/img/plant-hands-wide-medium.png") 50% no-repeat;
+  background-size: cover;
+  height: 60vh;
+  position: relative;
+  text-align: left;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-justify-content: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.sri-section .sri-section-text {
+  width: 80vw;
+  color: #fefefe;
+  
+  text-shadow: 1px 1px 2px #0a0a0a;
+}
 
 /* Menu & Navigation */
 
