@@ -99,6 +99,16 @@ h5 {
       -ms-flex-pack: left;
           justify-content: left;
 }
+.sri-section:after{
+    position:fixed;
+    content:"";
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background:black;
+    z-index:-1;
+}
 
 .sri-section .sri-section-text {
   width: 80vw;
