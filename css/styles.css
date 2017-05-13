@@ -86,12 +86,30 @@ h5 {
   margin-bottom: 2em;
 }
 
-.sri-section {
-  background: black url("/img/plant-hands-wide-medium.png") 50% repeat-y;
+.sri-section-home {
+  background: black url("/img/plant-hands-wide-medium.png") 50% no-repeat;
+  background-size: cover;
+  height: 60vh;
+  padding: 50px;
+  margin-bottom: 2em;
+  position: relative;
+  text-align: left;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: left;
+      -ms-flex-align: left;
+          align-items: left;
+  -webkit-justify-content: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.sri-section-repeat {
+  background: black url("/img/plant-hands-wide-medium.png") 50% no-repeat;
   background-size: cover;
   /*height: 60vh;*/
-  padding-left: 50px;
-  padding-top: 30px;
+  padding: 50px;
   margin-bottom: 2em;
   position: relative;
   text-align: left;
@@ -109,7 +127,7 @@ h5 {
 .sri-section-small {
   background: black;
   background-size: cover;
-  height: 60vh;
+  /*height: 60vh;*/
   padding: 10px;
   margin-bottom: 2em;
   position: relative;
