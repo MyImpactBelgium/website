@@ -125,7 +125,7 @@ h5 {
 }
 
 .sri-section-small {
-  background: black;
+  background: black url("/img/plant-hands-wide-medium.png") 50% no-repeat;
   background-size: cover;
   /*height: 60vh;*/
   padding: 10px;
@@ -163,7 +163,7 @@ h5 {
   text-shadow: 1px 1px 2px #0a0a0a;
 }
 
-.sri-section-home .sri-section-text {
+.sri-section-adapt .sri-section-text {
   width: 80vw;
   color: #fefefe;
   
