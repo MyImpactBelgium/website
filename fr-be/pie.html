@@ -88,6 +88,84 @@
 
 		<!-- CHARTS SCRIPT END -->
 		
+		<!-- MOB CHARTS SCRIPT START -->
+		<script type="text/javascript">
+		window.onload = function () {
+			var chart1mob = new CanvasJS.Chart("chartContainer1mob",
+			{
+				/*title:{
+					text: "U.S Smartphone OS Market Share, Q3 2012",
+					fontFamily: "Impact",
+					fontWeight: "normal"
+				},
+				legend:{
+					verticalAlign: "bottom",
+					horizontalAlign: "center"
+				}, 
+				*/
+				data: [
+				{
+					//startAngle: 45,
+					indexLabelFontSize: 8,
+					indexLabelFontFamily: "HelveticaNeue",
+					indexLabelFontColor: "darkgrey",
+					indexLabelLineColor: "darkgrey",
+					indexLabelPlacement: "outside",
+					type: "doughnut",
+					showInLegend: false,
+					dataPoints: [
+						{  y: 20, legendText:"Crédits aux particuliers", indexLabel: "Crédits aux particuliers" },
+						{  y: 41, legendText:"Crédits aux entreprises", indexLabel: "Crédits aux entreprises" },
+						{  y: 4, legendText:"Projets gournementaux", indexLabel: "Projets gournementaux" },
+						{  y: 6, legendText:"Obligations de l'Etat belge", indexLabel: "Obligations de l'Etat belge" },
+						{  y: 8, legendText:"Obligations et participations", indexLabel: "Obligations et participations" },
+						{  y: 4, legendText:"Immobilisations financières", indexLabel: "Immobilisations financières" },
+						{  y: 5, legendText:"Comptes de régularisation", indexLabel: "Comptes de régularisation" },
+						{  y: 1, legendText:"Charges d'exploitation", indexLabel: "Charges d'exploitation" }
+					]
+				}
+				]
+			});
+			var chart2mob = new CanvasJS.Chart("chartContainer2mob",
+			{
+				/*title:{
+					text: "U.S Smartphone OS Market Share, Q3 2012",
+					fontFamily: "Impact",
+					fontWeight: "normal"
+				},
+				legend:{
+					verticalAlign: "bottom",
+					horizontalAlign: "center"
+				}, 
+				*/
+				data: [
+				{
+					//startAngle: 45,
+					indexLabelFontSize: 8,
+					indexLabelFontFamily: "HelveticaNeue",
+					indexLabelFontColor: "darkgrey",
+					indexLabelLineColor: "darkgrey",
+					indexLabelPlacement: "outside",
+					type: "doughnut",
+					showInLegend: false,
+					dataPoints: [
+						{  y: 19, legendText:"Crédits habitation", indexLabel: "Crédits habitation" },
+						{  y: 3, legendText:"Secteurs à profit social", indexLabel: "Secteurs à profit social" },
+						{  y: 74, legendText:"Crédits aux entrepises", indexLabel: "Crédits aux entrepises" },
+						{  y: 2, legendText:"Crédits verts", indexLabel: "Crédits verts" },
+						{  y: 2, legendText:"Energies durables", indexLabel: "Energies durables" }
+					]
+				}
+				]
+			});
+			chart1mob.render();
+			chart2mob.render();
+		}
+		</script>
+		<script type="text/javascript" src="/js/canvasjs.min.js"></script>
+
+		<!-- MOB CHARTS SCRIPT END -->
+		
 		<!-- ANALYTICS START -->
 		<!-- GOOGLE ANALYTICS -->
 		<script>
@@ -143,12 +221,17 @@
 		<!-- START SECTION1 -->
 		<section>
 			<div class="row align-center">
-				<div class="small-12 medium-6 large-6 column">
+				<div class="show-for-medium medium-6 large-6 column">
 					<br>
 					<div id="chartContainer1" style="height: 300px; width: 100%;"></div>
 					<br>
 				</div>
-				<div class="show-for-medium medium-6 large-6 column align-self-middle">
+				<div class="show-for-small-only small-12 medium-6 large-6 column">
+					<br>
+					<div id="chartContainer1mob" style="height: 300px; width: 100%;"></div>
+					<br>
+				</div>
+				<div class="small-12 medium-6 large-6 column align-self-middle">
 					<h4>Comment vos économies sont-elles investies ?</h4> 
 					<p>En 2015, pour chaque tranche de 100 euros d'économies de nos clients, nous avons investi 66 euros dans l'économie belge grâce aux prêts aux particuliers
 						et aux entreprises, et aux projets gouvernementaux. En plus de cela, 6 euros ont été placés en obligations d'Etat belges.
@@ -156,6 +239,7 @@
 					<button class="button js-scroll">Où autour de moi ?</button>
 				</div>
 			</div>
+			<!--
 			<div class="row">
 				<div class="small-12 show-for-small-only small-centered text-center columns">
 					<h1>Comment vos économies sont-elles investies ?</h1>
@@ -166,13 +250,14 @@
 					<br><br>
 				</div>
 			</div>
+			-->
 		</section>
 		<!-- END SECTION1 -->
 		
 		<!-- START SECTION2 -->
 		<section>
 			<div class="row align-center">
-				<div class="show-for-medium medium-6 large-6 column align-self-middle">
+				<div class="small-12 medium-6 large-6 column align-self-middle">
 					<h4>Nous stimulons l'économie locale</h4>
 					<!--
 					<h4>Aperçu des impôts payés en 2015 en Belgique</h4>
@@ -213,7 +298,12 @@
 					<div id="chartContainer2" style="height: 300px; width: 100%;"></div>
 					<br>
 				</div>
-				<div class="show-for-medium medium-12 large-12 column align-self-middle">
+				<div class="show-for-small-only small-12 medium-6 large-6 column align-self-middle">
+					<br>
+					<div id="chartContainer2" style="height: 300px; width: 100%;"></div>
+					<br>
+				</div>
+				<div class="medium-12 large-12 column align-self-middle">
 					<p><strong>Avertissement:</strong> Ceci est un prototype créé à partir des chiffres de 2015 et qui sont donc susceptibles de changer.</p>
 				</div>
 				<!--<div class="small-12 show-for-small-only small-centered text-center columns">
