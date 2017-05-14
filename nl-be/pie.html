@@ -40,7 +40,7 @@
 						{  y: 41, legendText:"Kredieten aan ondernemingen", indexLabel: "Kredieten aan ondernemingen" },
 						{  y: 4, legendText:"Overheidsprojecten", indexLabel: "Overheidsprojecten" },
 						{  y: 6, legendText:"Belgische staatsobligaties", indexLabel: "Belgische staatsobligaties" },
-						{  y: 8, legendText:"Obligaties et aandelen", indexLabel: "Obligaties et aandelen" },
+						{  y: 8, legendText:"Obligaties et aandelen", indexLabel: "Obligaties en aandelen" },
 						{  y: 4, legendText:"Financiële immobilisaties", indexLabel: "Financiële immobilisaties" },
 						{  y: 5, legendText:"Regularisatie rekeningen", indexLabel: "Regularisatie rekeningen" },
 						{  y: 1, legendText:"Werkingsmiddelen", indexLabel: "Werkingsmiddelen" }
@@ -71,8 +71,8 @@
 					type: "doughnut",
 					showInLegend: false,
 					dataPoints: [
-						{  y: 19, legendText:"Woon kredieten", indexLabel: "Woon kredieten" },
-						{  y: 3, legendText:"Sociaalprofitsector", indexLabel: "Sociaalprofitsector" },
+						{  y: 19, legendText:"Woonkredieten", indexLabel: "Woon kredieten" },
+						{  y: 3, legendText:"Sociaalprofitsector", indexLabel: "Socialprofitsector" },
 						{  y: 74, legendText:"Kredieten aan ondernemingen", indexLabel: "Kredieten aan ondernemingen" },
 						{  y: 2, legendText:"Groene kredieten", indexLabel: "Groene kredieten" },
 						{  y: 2, legendText:"Duurzame energie", indexLabel: "Duurzame energie" }
@@ -86,7 +86,85 @@
 		</script>
 		<script type="text/javascript" src="/js/canvasjs.min.js"></script>
 
-		<!-- CHARTS SCRIPT END -->
+		<!-- MOBILE CHARTS SCRIPT END -->
+		
+		<!-- CHARTS SCRIPT START -->
+		<script type="text/javascript">
+		window.onload = function () {
+			var chart1mob = new CanvasJS.Chart("chartContainer1mob",
+			{
+				/*title:{
+					text: "U.S Smartphone OS Market Share, Q3 2012",
+					fontFamily: "Impact",
+					fontWeight: "normal"
+				},
+				legend:{
+					verticalAlign: "bottom",
+					horizontalAlign: "center"
+				}, 
+				*/
+				data: [
+				{
+					//startAngle: 45,
+					indexLabelFontSize: 8,
+					indexLabelFontFamily: "HelveticaNeue",
+					indexLabelFontColor: "darkgrey",
+					indexLabelLineColor: "darkgrey",
+					indexLabelPlacement: "outside",
+					type: "doughnut",
+					showInLegend: false,
+					dataPoints: [
+						{  y: 20, legendText:"Kredieten aan particulieren", indexLabel: "Kredieten aan particulieren" },
+						{  y: 41, legendText:"Kredieten aan ondernemingen", indexLabel: "Kredieten aan ondernemingen" },
+						{  y: 4, legendText:"Overheidsprojecten", indexLabel: "Overheidsprojecten" },
+						{  y: 6, legendText:"Belgische staatsobligaties", indexLabel: "Belgische staatsobligaties" },
+						{  y: 8, legendText:"Obligaties et aandelen", indexLabel: "Obligaties en aandelen" },
+						{  y: 4, legendText:"Financiële immobilisaties", indexLabel: "Financiële immobilisaties" },
+						{  y: 5, legendText:"Regularisatie rekeningen", indexLabel: "Regularisatie rekeningen" },
+						{  y: 1, legendText:"Werkingsmiddelen", indexLabel: "Werkingsmiddelen" }
+					]
+				}
+				]
+			});
+			var chart2mob = new CanvasJS.Chart("chartContainer2mob",
+			{
+				/*title:{
+					text: "U.S Smartphone OS Market Share, Q3 2012",
+					fontFamily: "Impact",
+					fontWeight: "normal"
+				},
+				legend:{
+					verticalAlign: "bottom",
+					horizontalAlign: "center"
+				}, 
+				*/
+				data: [
+				{
+					//startAngle: 45,
+					indexLabelFontSize: 8,
+					indexLabelFontFamily: "HelveticaNeue",
+					indexLabelFontColor: "darkgrey",
+					indexLabelLineColor: "darkgrey",
+					indexLabelPlacement: "outside",
+					type: "doughnut",
+					showInLegend: false,
+					dataPoints: [
+						{  y: 19, legendText:"Woonkredieten", indexLabel: "Woon kredieten" },
+						{  y: 3, legendText:"Sociaalprofitsector", indexLabel: "Socialprofitsector" },
+						{  y: 74, legendText:"Kredieten aan ondernemingen", indexLabel: "Kredieten aan ondernemingen" },
+						{  y: 2, legendText:"Groene kredieten", indexLabel: "Groene kredieten" },
+						{  y: 2, legendText:"Duurzame energie", indexLabel: "Duurzame energie" }
+					]
+				}
+				]
+			});
+			chart1mob.render();
+			chart2mob.render();
+		}
+		</script>
+		<script type="text/javascript" src="/js/canvasjs.min.js"></script>
+
+		<!-- MOBILE CHARTS SCRIPT END -->
 		
 		<!-- ANALYTICS START -->
 		<!-- GOOGLE ANALYTICS -->
@@ -143,12 +221,17 @@
 		<!-- START SECTION1 -->
 		<section>
 			<div class="row align-center">
-				<div class="small-12 medium-6 large-6 column">
+				<div class="show-for-medium small-12 medium-6 large-6 column">
 					<br>
 					<div id="chartContainer1" style="height: 300px; width: 100%;"></div>
 					<br>
 				</div>
-				<div class="show-for-medium medium-6 large-6 column align-self-middle">
+				<div class="show-for-small-only small-12 medium-6 large-6 column">
+					<br>
+					<div id="chartContainer1mob" style="height: 300px; width: 100%;"></div>
+					<br>
+				</div>
+				<div class="small-12 medium-6 large-6 column align-self-middle">
 					<h4>Hoe is jouw spaargeld geïnvesteerd?</h4> 
 					<p>In 2015 investeerden we van elke 100 euro spaargeld van onze klanten 66 euro opnieuw in de economie, 
 						via kredieten aan particulieren en bedrijven, en projecten van de overheid. 
@@ -156,6 +239,7 @@
 					<button class="button js-scroll">Waar in mijn buurt ?</button>
 				</div>
 			</div>
+			<!--
 			<div class="row">
 				<div class="small-12 show-for-small-only small-centered text-center columns">
 					<h1>Hoe is jouw spaargeld geïnvesteerd?</h1> 
@@ -165,13 +249,14 @@
 					<button class="button js-scroll">Waar in mijn buurt ?</button>
 				</div>
 			</div>
+			-->
 		</section>
 		<!-- END SECTION1 -->
 		
 		<!-- START SECTION2 -->
 		<section>
 			<div class="row align-center">
-				<div class="show-for-medium medium-6 large-6 column align-self-middle">
+				<div class="small-12 medium-6 large-6 column align-self-middle">
 					<h4>Wij stimuleren de locale economie</h4>
 					<!--
 					<h4>Aperçu des impôts payés en 2015 en Belgique</h4>
@@ -207,47 +292,19 @@
 						spaargeld geïnvesteerd in de Belgische economie. Naast kredieten aan particulieren en bedrijven blijven we ook 
 						investeren in specifieke sectoren zoals de socialprofitsector en duurzame energie. Door te investeren in onder 
 						andere scholen, rusthuizen, ziekenhuizen en zorgcentra willen we bijdragen tot een verbetering van het algemeen welzijn van de samenleving.</p>
+					<a hreflang="engagements" href="/nl-be/engagement.html" class="button">Verder ontdeken</a>
 				</div>
 				<div class="show-for-medium medium-6 large-6 column align-self-middle">
 					<br>
 					<div id="chartContainer2" style="height: 300px; width: 100%;"></div>
 					<br>
 				</div>
-				<div class="show-for-medium medium-12 large-12 column align-self-middle">
-					<p><strong>Waarschuwing:</strong> Dit is een prototype dat ontworpen werd op basis van cijfers van 2015 en die dus veranderd kunnen zijn.</p>
+				<div class="show-for-small-only small-12 medium-6 large-6 column align-self-middle">
+					<br>
+					<div id="chartContainer2mob" style="height: 300px; width: 100%;"></div>
+					<br>
 				</div>
-				<div class="small-12 show-for-small-only small-centered text-center columns">
-					<!--<h1>Aperçu des impôts payés en 2015 en Belgique</h1>
-					<table>
-					  <thead>
-					    <tr>
-					      <th style="text-align:center">Poste</th>
-					      <th style="text-align:center">Montant</th>
-					    </tr>
-					  </thead>
-					  <tbody>
-					    <tr>
-					      <td>Impôts sur le revenu</td>
-					      <td>718.000.000€</td>
-					    </tr>
-					    <tr>
-					      <td>TVA non récupérable</td>
-					      <td>287.000.000€</td>
-					    </tr>
-					    <tr>
-					      <td>Garantie des dépôts</td>
-					      <td>431.000.000€</td>
-					    </tr>
-					    <tr>
-					      <td><strong>Total</strong></td>
-					      <td><strong>1.436.000.000€</strong></td>
-					    </tr>
-					  </tbody>
-					</table>-->
-					<p>In elk van onze kernlanden stimuleren we de lokale economie. Hoe pakken we dat aan ? In 2015 beheerden we 93 miljard of 
-						spaargeld geïnvesteerd in de Belgische economie. Naast kredieten aan particulieren en bedrijven blijven we ook 
-						investeren in specifieke sectoren zoals de socialprofitsector en duurzame energie. Door te investeren in onder 
-						andere scholen, rusthuizen, ziekenhuizen en zorgcentra willen we bijdragen tot een verbetering van het algemeen welzijn van de samenleving.</p>
+				<div class="medium-12 large-12 column align-self-middle">
 					<p><strong>Waarschuwing:</strong> Dit is een prototype dat ontworpen werd op basis van cijfers van 2015 en die dus veranderd kunnen zijn.</p>
 				</div>
 			</div>
