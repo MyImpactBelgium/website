@@ -55,7 +55,11 @@ h5 {
         overflow:auto;
     }
 
-
+.info {
+        width: 20px;
+        height: 20px;
+	padding-right: 10px;
+    }
 
 .hero-section {
   background: black url("/img/hero-section-image.jpg") 50% no-repeat;
