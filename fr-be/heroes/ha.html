@@ -9,6 +9,17 @@
 	    <link rel="stylesheet" href="/css/styles.css" />
 	    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet">
 	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+		
+		<!-- MENU START -->
+		
+		<script> 
+		    $(function(){
+		      $("#menu_bar").load("/fr-be/template/menu.html"); 
+		    });
+		</script> 
+
+		<!-- MENU END -->
+		
 		<!-- ANALYTICS START -->
 		<!-- GOOGLE ANALYTICS -->
 		<script>
@@ -35,7 +46,9 @@
 	</head>
 	<body>
 
-		<!-- BEGIN - TOP BAR -->
+	<div id="menu_bar"></div>	
+		
+		<!-- BEGIN - TOP BAR 
 		<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
 			<button class="menu-icon" type="button" data-toggle="example-menu"></button>
 			
@@ -61,7 +74,7 @@
 			  </ul>
 			</div>
 		</div>
-		<!-- END - TOP BAR -->
+		 END - TOP BAR -->
 
 <section>
       <div class="row heros-video">	
@@ -194,35 +207,7 @@ Vous trouverez leurs vastes collections récemment revues dans un bâtiment hist
 		<script src="/js/vendor/what-input.js"></script>
 		<script src="/js/vendor/foundation.min.js"></script>
 		<script src="/js/app.js"></script>
-		
-	<!-- STICKY MENU START -->
-		$('.menu').addClass('original').clone().insertAfter('.menu').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
-
-		scrollIntervalID = setInterval(stickIt, 10);
-
-
-		function stickIt() {
-
-		  var orgElementPos = $('.original').offset();
-		  orgElementTop = orgElementPos.top;               
-
-		  if ($(window).scrollTop() >= (orgElementTop)) {
-		    // scrolled past the original position; now only show the cloned, sticky element.
-
-		    // Cloned element should always have same left position and width as original element.     
-		    orgElement = $('.original');
-		    coordsOrgElement = orgElement.offset();
-		    leftOrgElement = coordsOrgElement.left;  
-		    widthOrgElement = orgElement.css('width');
-		    $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement).show();
-		    $('.original').css('visibility','hidden');
-		  } else {
-		    // not scrolled past the menu; only show the original menu.
-		    $('.cloned').hide();
-		    $('.original').css('visibility','visible');
-		  }
-		}
-	<!-- STICKY MENU END -->
+		<script src="/js/stickymenu.js"></script>
 			
 	</body>
 </html>
