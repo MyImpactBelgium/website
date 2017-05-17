@@ -1,6 +1,6 @@
 // Create a clone of the menu, right next to original.
 
-$('#menu_bar').addClass('original').clone().insertAfter('#menu_bar').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
+$('.title-bar').addClass('original').clone().insertAfter('.title-bar').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
 scrollIntervalID = setInterval(stickIt, 10);
 
 
