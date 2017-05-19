@@ -181,6 +181,15 @@ h5 {
   text-shadow: 1px 1px 2px #0a0a0a;
 }
 
+.row-sdg {
+  /*width: 80vw;*/
+  padding-bottom: 1em;
+}
+
+.img-sdg-small {
+  width: 80px;
+}
+
 /* Menu & Navigation */
 
 .title-bar, .top-bar, .top-bar-right {
