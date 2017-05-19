@@ -12,6 +12,8 @@ $( document ).ready( function() {
   var modalQuickfact4 = $('#modal-quickfact-4');
   var linkQuickfact5 = $('#link-quickfact-5');
   var modalQuickfact5 = $('#modal-quickfact-5');
+  var linkSDG1 = $('#link-SDG-1');
+  var modalSDG1 = $('#modal-SDG-1');
   linkQuickfact1.click(function(event) {
     modalQuickfact1.foundation('open');
   });
@@ -26,6 +28,9 @@ $( document ).ready( function() {
   });
   linkQuickfact5.click(function(event) {
     modalQuickfact5.foundation('open');
+  });
+  linkSDG1.click(function(event) {
+    modalSDG1.foundation('open');
   });
 
 
