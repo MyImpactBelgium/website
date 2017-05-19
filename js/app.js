@@ -197,8 +197,8 @@ $( document ).ready( function() {
     
     var saoLink = _langPath + "heroes/" + "sao-paulo.html"
     var saoContentString = 'Sao Paulo <br>Tea & coffee seller<br>
-    <a href="'+saoLink+'"><img src="/img/sao-paulo-card-small.png">
-      <img class="icon" src="/img/play-button.svg"></a><a href="'+saoLink+'">Details</a>';
+    /*<a href="'+saoLink+'"><img src="/img/sao-paulo-card-small.png">
+      <img class="icon" src="/img/play-button.svg"></a>*/<a href="'+saoLink+'">Details</a>';
     //Set window width + content
     var saoInfowindow = new google.maps.InfoWindow({
       content: saoContentString,
