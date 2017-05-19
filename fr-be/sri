@@ -90,16 +90,51 @@
 <section class="show-for-medium sdg">
   <div class="row">	
       <div class="medium-2 column ">
-          <a href="modal voir home"><img src="/img/1nopoverty.jpg"/></a>
+          <a href="#" id="sdg-1" data-open="sdg1" aria-controls="sdg1" aria-haspopup="true" tabindex="0" style="color: black"><img src="/img/1nopoverty.jpg"/></a>
       </div>
       <div class="medium-4 column ">
           <p><strong>text en focus</strong><br>
           le reste du blabla
-		  <a href="#" id="sdg-1" data-open="sdg1" aria-controls="sdg1" aria-haspopup="true" tabindex="0" style="color: black">
-							<img src="/img/infoblack.svg" alt="info" class="info">En savoir plus...</a></p>
-        </div>
-	</div>
-</section>		
+	  <a href="#" id="sdg-1" data-open="sdg1" aria-controls="sdg1" aria-haspopup="true" tabindex="0" style="color: black">
+	  <img src="/img/infoblack.svg" alt="info" class="info">En savoir plus...</a></p>
+      </div>
+      <div class="medium-2 column ">
+          <a href="#" id="sdg-1" data-open="sdg1" aria-controls="sdg1" aria-haspopup="true" tabindex="0" style="color: black"><img src="/img/1nopoverty.jpg"/></a>
+      </div>
+      <div class="medium-4 column ">
+          <p><strong>text en focus</strong><br>
+          le reste du blabla
+	  <a href="#" id="sdg-1" data-open="sdg1" aria-controls="sdg1" aria-haspopup="true" tabindex="0" style="color: black">
+	  <img src="/img/infoblack.svg" alt="info" class="info">En savoir plus...</a></p>
+      </div>
+  </div>
+</section>
+
+<section class="show-for-small-only sdg">
+  <div class="row">	
+      <div class="medium-1 column ">
+          <a href="#" id="sdg-1" data-open="sdg1" aria-controls="sdg1" aria-haspopup="true" tabindex="0" style="color: black"><img src="/img/1nopoverty.jpg"/></a>
+      </div>
+      <div class="medium-3 column ">
+          <p><strong>text en focus</strong><br>
+          le reste du blabla
+	  <a href="#" id="sdg-1" data-open="sdg1" aria-controls="sdg1" aria-haspopup="true" tabindex="0" style="color: black">
+	  <img src="/img/infoblack.svg" alt="info" class="info">En savoir plus...</a></p>
+      </div>
+  </div>
+  <div class="row">	
+      <div class="medium-1 column ">
+          <a href="#" id="sdg-1" data-open="sdg1" aria-controls="sdg1" aria-haspopup="true" tabindex="0" style="color: black"><img src="/img/1nopoverty.jpg"/></a>
+      </div>
+      <div class="medium-3 column ">
+          <p><strong>text en focus</strong><br>
+          le reste du blabla
+	  <a href="#" id="sdg-1" data-open="sdg1" aria-controls="sdg1" aria-haspopup="true" tabindex="0" style="color: black">
+	  <img src="/img/infoblack.svg" alt="info" class="info">En savoir plus...</a></p>
+      </div>
+  </div>
+</section>
+
 !-- MODALS START -->
 		<div class="reveal-overlay">
 		
