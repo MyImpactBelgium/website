@@ -12,6 +12,41 @@ $( document ).ready( function() {
   var modalQuickfact4 = $('#modal-quickfact-4');
   var linkQuickfact5 = $('#link-quickfact-5');
   var modalQuickfact5 = $('#modal-quickfact-5');
+  var linkSDG1 = $('#link-SDG-1');
+  var modalSDG1 = $('#modal-SDG-1');
+  var linkSDG2 = $('#link-SDG-2');
+  var modalSDG2 = $('#modal-SDG-2');
+  var linkSDG3 = $('#link-SDG-3');
+  var modalSDG3 = $('#modal-SDG-3');
+  var linkSDG4 = $('#link-SDG-4');
+  var modalSDG4 = $('#modal-SDG-4');
+  var linkSDG5 = $('#link-SDG-5');
+  var modalSDG5 = $('#modal-SDG-5');
+  var linkSDG6 = $('#link-SDG-6');
+  var modalSDG6 = $('#modal-SDG-6');
+  var linkSDG7 = $('#link-SDG-7');
+  var modalSDG7 = $('#modal-SDG-7');
+  var linkSDG8 = $('#link-SDG-8');
+  var modalSDG8 = $('#modal-SDG-8');
+  var linkSDG9 = $('#link-SDG-9');
+  var modalSDG9 = $('#modal-SDG-9');
+  var linkSDG10 = $('#link-SDG-10');
+  var modalSDG10 = $('#modal-SDG-10');
+  var linkSDG11 = $('#link-SDG-11');
+  var modalSDG11 = $('#modal-SDG-11');
+  var linkSDG12 = $('#link-SDG-12');
+  var modalSDG12 = $('#modal-SDG-12');
+  var linkSDG13 = $('#link-SDG-13');
+  var modalSDG13 = $('#modal-SDG-13');
+  var linkSDG14 = $('#link-SDG-14');
+  var modalSDG14 = $('#modal-SDG-14');
+  var linkSDG15 = $('#link-SDG-15');
+  var modalSDG15 = $('#modal-SDG-15');
+  var linkSDG16 = $('#link-SDG-16');
+  var modalSDG16 = $('#modal-SDG-16');
+  var linkSDG17 = $('#link-SDG-17');
+  var modalSDG17 = $('#modal-SDG-17');
+  
   linkQuickfact1.click(function(event) {
     modalQuickfact1.foundation('open');
   });
@@ -27,7 +62,57 @@ $( document ).ready( function() {
   linkQuickfact5.click(function(event) {
     modalQuickfact5.foundation('open');
   });
-
+  linkSDG1.click(function(event) {
+    modalSDG1.foundation('open');
+  });
+  linkSDG2.click(function(event) {
+    modalSDG2.foundation('open');
+  });
+  linkSDG3.click(function(event) {
+    modalSDG3.foundation('open');
+  });  
+  linkSDG4.click(function(event) {
+    modalSDG4.foundation('open');
+  });  
+  linkSDG5.click(function(event) {
+    modalSDG5.foundation('open');
+  });  
+  linkSDG6.click(function(event) {
+    modalSDG6.foundation('open');
+  });  
+  linkSDG7.click(function(event) {
+    modalSDG7.foundation('open');
+  });  
+  linkSDG8.click(function(event) {
+    modalSDG8.foundation('open');
+  });  
+  linkSDG9.click(function(event) {
+    modalSDG9.foundation('open');
+  });  
+  linkSDG10.click(function(event) {
+    modalSDG10.foundation('open');
+  });  
+  linkSDG11.click(function(event) {
+    modalSDG11.foundation('open');
+  });  
+  linkSDG12.click(function(event) {
+    modalSDG12.foundation('open');
+  });  
+  linkSDG13.click(function(event) {
+    modalSDG13.foundation('open');
+  });  
+  linkSDG14.click(function(event) {
+    modalSDG14.foundation('open');
+  });  
+  linkSDG15.click(function(event) {
+    modalSDG15.foundation('open');
+  });  
+  linkSDG16.click(function(event) {
+    modalSDG16.foundation('open');
+  });  
+  linkSDG17.click(function(event) {
+    modalSDG17.foundation('open');
+  });
 
   //Google Maps JS
   
@@ -111,11 +196,11 @@ $( document ).ready( function() {
     /*  SAO BLOCK */
     
     var saoLink = _langPath + "heroes/" + "sao-paulo.html"
-    var saoContentString = 'Sao Paulo <br>Tea & coffee seller<br><a href="'+saoLink+'">Details</a>';
+    var saoContentString = 'Sao Paulo <br>Tea & coffee seller<br><div class="card"><div class="card-image"><a href="'+saoLink+'"><img src="/img/sao-paulo-card-small.png"><img class="icon" src="/img/play-button.svg"></a></div></div><a href="'+saoLink+'">Details</a>';
     //Set window width + content
     var saoInfowindow = new google.maps.InfoWindow({
       content: saoContentString,
-      maxWidth: 500
+      maxWidth: 200
     });
 
     //Add Marker
