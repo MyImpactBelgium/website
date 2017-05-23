@@ -81,15 +81,15 @@
         <div class="row heros-video">
             <div class="medium-12 large-12 column ">
                 <h4>Catégorie : Micro Brasserie</h4>
-            </div>
+            </div>  
         </div>
         <div class="row ">
             <div class="small-12 medium-7 column">
                 <img src="/img/micro-brewery.jpg" />
             </div>
             <div class="small-12 medium-5 column">
-                <a href="" class="button success expanded">
-                    <i class="fa fa-heart"></i> Votez
+                <a class="button success expanded" id="button-confirm-vote-micro-b" data-open="confirm-vote">
+                    <i class="fa fi-heart"></i> Votez
                 </a>
             </div>
         </div>
@@ -185,6 +185,13 @@
         <br>
     </section>
     <!-- MAP END -->
+    <div class="reveal" id="confirm-vote" data-reveal>
+        <h1>Merci d'avoir voté pour cette catégorie</h1>
+        <p>Nous tenons compte de votre choix !</p>
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
     <script src="/js/vendor/jquery.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPyCBAfPmPUcjzYYSll68iWSaLBZJ1uFI&v=3.exp&sensor=false">
     </script>

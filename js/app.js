@@ -2,6 +2,19 @@ $(document).foundation();
 
 $( document ).ready( function() {
 
+  var buttonConfirmVoteMicroB = $('#button-confirm-vote-micro-b');
+
+
+  buttonConfirmVoteMicroB.click(function(event) {
+    ga( 'send',
+      'event',
+      'Vote button',
+      'fr-micro-brewery',
+      'FR WEBSITE',
+      {nonInteraction: true});  
+      
+  });
+
   var linkQuickfact1 = $('#link-quickfact-1');
   var modalQuickfact1 = $('#modal-quickfact-1');
   var linkQuickfact2 = $('#link-quickfact-2');
