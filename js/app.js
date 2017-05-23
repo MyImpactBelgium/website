@@ -3,6 +3,7 @@ $(document).foundation();
 $( document ).ready( function() {
 
   var buttonConfirmVoteMicroB = $('#button-confirm-vote-micro-b');
+  var buttonConfirmVoteCoffee = $('#button-confirm-vote-coffee');
 
 
   buttonConfirmVoteMicroB.click(function(event) {
@@ -14,6 +15,16 @@ $( document ).ready( function() {
       {nonInteraction: true});  
       
   });
+
+  buttonConfirmVoteCoffee.click(function(event) {
+    ga( 'send',
+      'event',
+      'Vote button',
+      'fr-coffee',
+      'FR WEBSITE',
+      {nonInteraction: true});  
+
+  });  
 
   var linkQuickfact1 = $('#link-quickfact-1');
   var modalQuickfact1 = $('#modal-quickfact-1');
