@@ -1,123 +1,132 @@
 <!doctype html>
 <html class="no-js" lang="fr">
- 	<head>
-	    <meta charset="utf-8" />
-	    <meta http-equiv="x-ua-compatible" content="ie=edge">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	    <title>My Impact</title>
-	    <link rel="stylesheet" href="/css/foundation.min.css" />
-	    <link rel="stylesheet" href="/css/styles.css" />
-	    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet"> -->
-	    
-	    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:400,700" rel="stylesheet">
 
-		<!-- CHARTS SCRIPT START -->
-		<script type="text/javascript">
-			window.onload = function () {
-			var chart = new CanvasJS.Chart("chartContainer",
-			{
-				/*title:{
-					text: "U.S Smartphone OS Market Share, Q3 2012",
-					fontFamily: "Impact",
-					fontWeight: "normal"
-				},
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Impact</title>
+    <link rel="stylesheet" href="/css/foundation.min.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:400,700" rel="stylesheet">
+    <!-- CHARTS SCRIPT START -->
+    <script type="text/javascript">
+    window.onload = function() {
+        var chart = new CanvasJS.Chart("chartContainer", {
+            /*title:{
+            	text: "U.S Smartphone OS Market Share, Q3 2012",
+            	fontFamily: "Impact",
+            	fontWeight: "normal"
+            },
 
-				legend:{
-					verticalAlign: "bottom",
-					horizontalAlign: "center"
-				}, 
-				*/
-				data: [
-				{
-					//startAngle: 45,
-					indexLabelFontSize: 12,
-					indexLabelFontFamily: "HelveticaNeue",
-					indexLabelFontColor: "darkgrey",
-					indexLabelLineColor: "darkgrey",
-					indexLabelPlacement: "outside",
-					type: "doughnut",
-					showInLegend: false,
-					dataPoints: [
-						{  y: 72, legendText:"Dans l'économie réelle locale", indexLabel: "Dans l'économie réelle locale" },
-						{  y: 28, legendText:"Autre", indexLabel: "Autre" }
-					]
-				}
-				]
-			});
+            legend:{
+            	verticalAlign: "bottom",
+            	horizontalAlign: "center"
+            }, 
+            */
+            data: [{
+                //startAngle: 45,
+                indexLabelFontSize: 12,
+                indexLabelFontFamily: "HelveticaNeue",
+                indexLabelFontColor: "darkgrey",
+                indexLabelLineColor: "darkgrey",
+                indexLabelPlacement: "outside",
+                type: "doughnut",
+                showInLegend: false,
+                dataPoints: [{
+                    y: 72,
+                    legendText: "Dans l'économie réelle locale",
+                    indexLabel: "Dans l'économie réelle locale"
+                }, {
+                    y: 28,
+                    legendText: "Autre",
+                    indexLabel: "Autre"
+                }]
+            }]
+        });
 
-			chart.render();
-		}
-		</script>
-		<script type="text/javascript" src="/js/canvasjs.min.js"></script>
+        chart.render();
+    }
+    </script>
+    <script type="text/javascript" src="/js/canvasjs.min.js"></script>
+    <!-- CHARTS SCRIPT END -->
+    <!-- ANALYTICS START -->
+    <!-- GOOGLE ANALYTICS -->
+    <script>
+    (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    ga('create', 'UA-39842920-2', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <!-- HOTJAR -->
+    <script>
+    (function(h, o, t, j, a, r) {
+        h.hj = h.hj || function() {
+            (h.hj.q = h.hj.q || []).push(arguments)
+        };
+        h._hjSettings = {
+            hjid: 452658,
+            hjsv: 5
+        };
+        a = o.getElementsByTagName('head')[0];
+        r = o.createElement('script');
+        r.async = 1;
+        r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+        a.appendChild(r);
+    })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <!-- ANALYTICS END -->
+</head>
 
-		<!-- CHARTS SCRIPT END -->
-		
-		<!-- ANALYTICS START -->
-		<!-- GOOGLE ANALYTICS -->
-		<script>
-		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-		  ga('create', 'UA-39842920-2', 'auto');
-		  ga('send', 'pageview');
-		</script>
-		<!-- HOTJAR -->
-		<script>
-		    (function(h,o,t,j,a,r){
-			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-			h._hjSettings={hjid:452658,hjsv:5};
-			a=o.getElementsByTagName('head')[0];
-			r=o.createElement('script');r.async=1;
-			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-			a.appendChild(r);
-		    })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-		</script>
-		<!-- ANALYTICS END -->
-	</head>
-	<body>
-
-		<!-- BEGIN - TOP BAR -->
-		<div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
-			<button class="menu-icon" type="button" data-toggle="example-menu"></button>
-			
-		      <div class="title-bar-title">
-			      <a href="/nl-be/index.html"><img class=myimpact-logo src="/img/logo.svg"/></a>
-			My Impact
-		      </div>
-				</div>
-				<div class="top-bar" id="example-menu">
-					<div class="hide-for-small-only top-bar-left">
-						<div class="menu-text">
-							<a href="/nl-be/index.html"><img class=myimpact-logo src="/img/logo.svg"/></a>
-			  My Impact
-			</div>	
-			</div>
-			<div class="top-bar-right">
-			  <ul class="dropdown menu vertical medium-horizontal" data-dropdown-menu="">
-			    <li ><a hreflang="apercu chiffré" href="/nl-be/pie.html">Overzicht van de cijfers</a></li>
-			    <li ><a hreflang="engagements" href="/nl-be/engagement.html">Ons engagement</a></li>
-			    <li ><a hreflang="localement" href="/nl-be/index.html#map">In mijn buurt</a></li>
-			    <li ><a hreflang="localement" href="/nl-be/do-more.html">Ik wil meer impact</a></li>
-			    <li ><a hreflang="nl" href="/fr-be/index.html"><img src="/img/langFR.jpeg"/></a></li>
-			  </ul>
-			</div>
-		</div>
-		<!-- END - TOP BAR -->
-
-    <div class="hero-section">
-      <div class="hero-section-text">
-        <h4>Ontdek de impact die u heeft door uw spaargeld aan ons toe vertrouwen<br>Ga een stap verder en werk me aan de toekomst!
-</h4>
-        <a class="button" href="/nl-be/pie.html">Meer weten</a>
-        <!--<h5>Dit steunen we in uw burrt</h5>-->
-      </div>
-      <!--<div class="show-for-medium pin bounce"></div>-->
+<body>
+    <!-- BEGIN - TOP BAR -->
+    <div class="title-bar" data-responsive-toggle="example-menu" data-hide-for="medium">
+        <button class="menu-icon" type="button" data-toggle="example-menu"></button>
+        <div class="title-bar-title">
+            <a href="/nl-be/index.html"><img class=myimpact-logo src="/img/logo.svg" /></a>
+            My Impact
+        </div>
     </div>
-
-
-
-<!-- 		<section>
+    <div class="top-bar" id="example-menu">
+        <div class="hide-for-small-only top-bar-left">
+            <div class="menu-text">
+                <a href="/nl-be/index.html"><img class=myimpact-logo src="/img/logo.svg" /></a>
+                My Impact
+            </div>
+        </div>
+        <div class="top-bar-right">
+            <ul class="dropdown menu vertical medium-horizontal" data-dropdown-menu="">
+                <li><a hreflang="apercu chiffré" href="/nl-be/pie.html">Overzicht van de cijfers</a></li>
+                <li><a hreflang="engagements" href="/nl-be/engagement.html">Ons engagement</a></li>
+                <li><a hreflang="localement" href="/nl-be/index.html#map">In mijn buurt</a></li>
+                <li><a hreflang="localement" href="/nl-be/do-more.html">Ik wil meer impact</a></li>
+                <li>
+                    <a hreflang="nl" href="/fr-be/index.html"><img src="/img/langFR.jpeg" /></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- END - TOP BAR -->
+    <div class="hero-section">
+        <div class="hero-section-text">
+            <h4>Ontdek de impact die u heeft door uw spaargeld aan ons toe vertrouwen<br>Ga een stap verder en werk me aan de toekomst!
+</h4>
+            <a class="button" href="/nl-be/pie.html">Meer weten</a>
+            <!--<h5>Dit steunen we in uw burrt</h5>-->
+        </div>
+        <!--<div class="show-for-medium pin bounce"></div>-->
+    </div>
+    <!-- 		<section>
 			<div class="row align-center">
 				<div class="small-12 medium-6 large-6 column align-self-middle">
 					<div id="chartContainer" style="height: 300px; width: 100%;"></div>
@@ -127,177 +136,238 @@
 				</div>
 			</div>
 		</section> -->
-		<section class="carousel">
-			<div class="row align-center">
-				<div class="small-12 medium-12 column align-self-middle">
-					<h4>QUICK FACTS...</h4> 
-				<div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
-				  <ul class="orbit-container">
-				    <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
-				    <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
-
-					<li class="is-active orbit-slide">
-					<div class="docs-example-orbit-slide">
-						<p><strong>Wij zijn nog niet perfect</strong>, maar boeken elke dag vooruitgang door het werk van NGO's te beantwoorden met een verbeterd sectoraal beleid. 
-							<br><a href="#" id="link-quickfact-1" data-open="quickfact1" aria-controls="quickfact1" aria-haspopup="true" tabindex="0" style="color: white">
-							<img src="/img/info.svg" alt="info" class="info">Meer weten...</a></p>
-					</div>
-					</li>
-
-					<li class="is-active orbit-slide">
-					<div class="docs-example-orbit-slide">
-						<p>BNP Paribas stemt ermee in om de <strong>Duurzame OntwikkelingsDoelstellingen (DOD) van de Verenigde Naties </strong>na te leven!  
-							<br><br><a href="#" id="link-quickfact-2" data-open="quickfact2" aria-controls="quickfact1" aria-haspopup="true" tabindex="0" style="color: white">
-							<img src="/img/info.svg" alt="info" class="info">Meer weten...</a></p>
-					</div>
-					</li>
-
-					<li class="is-active orbit-slide">
-					<div class="docs-example-orbit-slide">
-						<p>Ons doel is om een <strong>« CSR totaalbeleid » te bewerkstelligen. </strong>
-							<br><br><a href="#" id="link-quickfact-3" data-open="quickfact3" aria-controls="quickfact1" aria-haspopup="true" tabindex="0" style="color: white">
-							<img src="/img/info.svg" alt="info" class="info">Meer weten...</a></p>
-					</div>
-					</li>
-					  
-					<li class="is-active orbit-slide">
-					<div class="docs-example-orbit-slide">
-						<p>De Bank is een belangrijke speler in de maatschappij, en onze eerste verantwoordelijkheid is om de <strong>economie op een ethische manier te financieren.</strong>.
-							<br><a href="#" id="link-quickfact-4" data-open="quickfact4" aria-controls="quickfact1" aria-haspopup="true" tabindex="0" style="color: white">
-							<img src="/img/info.svg" alt="info" class="info">Meer weten...</a></p>
-					</div>
-					</li>
-		  
-					<li class="is-active orbit-slide">
-					<div class="docs-example-orbit-slide">
-						<p><strong>NGO's zien wel degelijk de inspanningen die we doen. </strong>
-							<br><br><a href="#" id="link-quickfact-5" data-open="quickfact5" aria-controls="quickfact1" aria-haspopup="true" tabindex="0" style="color: white">
-							<img src="/img/info.svg" alt="info" class="info">Meer weten...</a></p>
-					</div>
-					</li>  
-	  
-				  </ul>
-				  <nav class="orbit-bullets">
-				    <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
-				    <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
-				    <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
-				    <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
-				    <button data-slide="4"><span class="show-for-sr">Fifth slide details.</span></button>
-				  </nav>
-				</div>					
-					
-					
-				</div>
-			</div>
-
-		</section>
-	
-	<!-- LOCAL ENTREPRENEURS MAP -->
-		<section class="map-section">
-  			<div class="show-for-medium medium-12 text-center columns ">
-				<h4>UW GELD AAN HET WERK IN UW BUURT !</h4>
-			</div>
- 			<div class="map container">
-		    		<div id="map_container">
-				</div>
-			  	<div id="map">
-				</div>
-			</div>
-<!-- 		<div class="show-for-medium medium-12 large-12 column align-self-middle">
+    <section class="carousel">
+        <div class="row align-center">
+            <div class="small-12 medium-12 column align-self-middle">
+                <h4>QUICK FACTS...</h4>
+                <div class="orbit" role="region" aria-label="Favorite Space Pictures" data-orbit>
+                    <ul class="orbit-container">
+                        <button class="orbit-previous"><span class="show-for-sr">Previous Slide</span>&#9664;&#xFE0E;</button>
+                        <button class="orbit-next"><span class="show-for-sr">Next Slide</span>&#9654;&#xFE0E;</button>
+                        <li class="is-active orbit-slide">
+                            <div class="docs-example-orbit-slide">
+                                <p><strong>Wij zijn nog niet perfect</strong>, maar boeken elke dag vooruitgang door het werk van NGO's te beantwoorden met een verbeterd sectoraal beleid.
+                                    <br>
+                                    <a href="#" id="link-quickfact-1" data-open="quickfact1" aria-controls="quickfact1" aria-haspopup="true" tabindex="0" style="color: white">
+                                        <img src="/img/info.svg" alt="info" class="info">Meer weten...</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="is-active orbit-slide">
+                            <div class="docs-example-orbit-slide">
+                                <p>BNP Paribas stemt ermee in om de <strong>Duurzame OntwikkelingsDoelstellingen (DOD) van de Verenigde Naties </strong>na te leven!
+                                    <br>
+                                    <br>
+                                    <a href="#" id="link-quickfact-2" data-open="quickfact2" aria-controls="quickfact1" aria-haspopup="true" tabindex="0" style="color: white">
+                                        <img src="/img/info.svg" alt="info" class="info">Meer weten...</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="is-active orbit-slide">
+                            <div class="docs-example-orbit-slide">
+                                <p>Ons doel is om een <strong>« CSR totaalbeleid » te bewerkstelligen. </strong>
+                                    <br>
+                                    <br>
+                                    <a href="#" id="link-quickfact-3" data-open="quickfact3" aria-controls="quickfact1" aria-haspopup="true" tabindex="0" style="color: white">
+                                        <img src="/img/info.svg" alt="info" class="info">Meer weten...</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="is-active orbit-slide">
+                            <div class="docs-example-orbit-slide">
+                                <p>De Bank is een belangrijke speler in de maatschappij, en onze eerste verantwoordelijkheid is om de <strong>economie op een ethische manier te financieren.</strong>.
+                                    <br>
+                                    <a href="#" id="link-quickfact-4" data-open="quickfact4" aria-controls="quickfact1" aria-haspopup="true" tabindex="0" style="color: white">
+                                        <img src="/img/info.svg" alt="info" class="info">Meer weten...</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li class="is-active orbit-slide">
+                            <div class="docs-example-orbit-slide">
+                                <p><strong>NGO's zien wel degelijk de inspanningen die we doen. </strong>
+                                    <br>
+                                    <br>
+                                    <a href="#" id="link-quickfact-5" data-open="quickfact5" aria-controls="quickfact1" aria-haspopup="true" tabindex="0" style="color: white">
+                                        <img src="/img/info.svg" alt="info" class="info">Meer weten...</a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                    <nav class="orbit-bullets">
+                        <button class="is-active" data-slide="0"><span class="show-for-sr">First slide details.</span><span class="show-for-sr">Current Slide</span></button>
+                        <button data-slide="1"><span class="show-for-sr">Second slide details.</span></button>
+                        <button data-slide="2"><span class="show-for-sr">Third slide details.</span></button>
+                        <button data-slide="3"><span class="show-for-sr">Fourth slide details.</span></button>
+                        <button data-slide="4"><span class="show-for-sr">Fifth slide details.</span></button>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- LOCAL ENTREPRENEURS MAP -->
+    <section class="map-section">
+        <div class="show-for-medium medium-12 text-center columns ">
+            <h4>UW GELD AAN HET WERK IN UW BUURT !</h4>
+        </div>
+        <div class="map container">
+            <div id="map_container">
+            </div>
+            <div id="map">
+            </div>
+        </div>
+        <!-- 		<div class="show-for-medium medium-12 large-12 column align-self-middle">
 			<p><strong>Avertissement</strong> : ceci est une map prototypée avec des initiatives à Gand.
 			D'autres localisations et type d'initiavives sont en cours de développement.</p>			
 		</div>
  -->
-		</section>		
-		
-<!-- STORIES -->	
-	<section>
-	
-	<div class="row align-center">
-	<br><h4>ONTDEK DE VERHALEN VAN ONZE LOCAL HEROES</h4>	
-	</div>	
-	<div class="row align-spaced">
-	<div class="small-6 medium-3 columns">
-          <div class="card">
-            <div class="card-image">
-              <a href="/nl-be/heroes/sao-paulo.html" hreflang="fr">
-                <img src="/img/sao-paulo-card-small.png">
-                <img class="icon" src="/img/play-button.svg">
-              </a>
-            </div>
-            <div class="card-section">
-              <h4>Sao Paulo</h4>
-              <p>Thee- en koffieverkoper</p>
-            </div>
-          </div>  
-	</div>	
-	<div class="small-6 medium-3 columns">
-          <div class="card">
-            <div class="card-image">
-              <a href="/nl-be/heroes/roomer.html" hreflang="fr">
-                <img src="/img/roomer-card-small.png">  
-                <img class="icon" src="/img/play-button.svg">
-              </a>
-            </div>
-            <div class="card-section">
-              <h4>RoomeR</h4>
-              <p>Brouwer</p>
-            </div>
-          </div>
+    </section>
+    <!-- STORIES -->
+    <section>
+        <div class="row align-center">
+            <br>
+            <h4>ONTDEK DE VERHALEN VAN ONZE LOCAL HEROES</h4>
         </div>
-        <div class="show-for-medium small-6 medium-3 columns">
-          <div class="card">
-            <div class="card-image">
-              <a href="/nl-be/heroes/alix.html" hreflang="fr">
-                <img src="/img/alix-card-small.png">
-                <img class="icon" src="/img/play-button.svg">
-              </a>
+        <div class="row align-spaced">
+            <div class="small-6 medium-3 columns">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="/nl-be/heroes/sao-paulo.html" hreflang="fr">
+                            <img src="/img/sao-paulo-card-small.png">
+                            <img class="icon" src="/img/play-button.svg">
+                        </a>
+                    </div>
+                    <div class="card-section">
+                        <h4>Sao Paulo</h4>
+                        <p>Thee- en koffieverkoper</p>
+                    </div>
+                </div>
             </div>
-            <div class="card-section">
-              <h4>Alix</h4>
-              <p>Lunch en feesten</p>
+            <div class="small-6 medium-3 columns">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="/nl-be/heroes/roomer.html" hreflang="fr">
+                            <img src="/img/roomer-card-small.png">
+                            <img class="icon" src="/img/play-button.svg">
+                        </a>
+                    </div>
+                    <div class="card-section">
+                        <h4>RoomeR</h4>
+                        <p>Brouwer</p>
+                    </div>
+                </div>
             </div>
-          </div>
+            <div class="show-for-medium small-6 medium-3 columns">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="/nl-be/heroes/alix.html" hreflang="fr">
+                            <img src="/img/alix-card-small.png">
+                            <img class="icon" src="/img/play-button.svg">
+                        </a>
+                    </div>
+                    <div class="card-section">
+                        <h4>Alix</h4>
+                        <p>Lunch en feesten</p>
+                    </div>
+                </div>
+            </div>
+            <div class="show-for-medium small-6 medium-3 columns">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="/nl-be/heroes/janssens.html" hreflang="fr">
+                            <img src="/img/janssens-card-small.png">
+                            <img class="icon" src="/img/play-button.svg">
+                        </a>
+                    </div>
+                    <div class="card-section">
+                        <h4>Janssens</h4>
+                        <p>Stoffen en tailoring</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="show-for-medium small-6 medium-3 columns">
-          <div class="card">
-            <div class="card-image">
-              <a href="/nl-be/heroes/janssens.html" hreflang="fr">
-                <img src="/img/janssens-card-small.png">
-                <img class="icon" src="/img/play-button.svg">
-              </a>
+    </section>
+   
+    <section class="spaced">
+        <div class="row">
+            <div class="small-12 columns text-center">
+                <h4 class="section-title">Stem voor jouw categorie</h4>
             </div>
-            <div class="card-section">
-              <h4>Janssens</h4>
-              <p>Stoffen en tailoring</p>
-            </div>
-          </div>        
         </div>
-	</div>
-	</section>
-	
-<!-- ENGAGEMENT & DO MORE START -->
-<div class="show-for-medium sri-section-home">
-      <div class="sri-section-text">
-        <h1>KLAAR VOOR MEER IMPACT ?</h1>
-	<h5>Verantwoord beleggen vanaf nu,</h5>
-	<p>geef ons uw mening, ondersteun onze initiatieven...</p>
-        <a class="button" href="/nl-be/do-more.html">Meer weten</a>
-	</div>
-</div>	
-<div class="show-for-small-only sri-section-small">
-      <div class="sri-section-text">
-        <h1>KLAAR VOOR MEER IMPACT ?</h1>
-	<h5>Verantwoord beleggen vanaf nu,</h5>
-	<p>geef ons uw mening, ondersteun onze initiatieven...</p>
-        <a class="button" href="/nl-be/do-more.html">Meer weten</a>
-	</div>
-</div>	
-
-<!-- ENGAGEMENT & DO MORE END -->
-
-<!-- CONTEST START -->
-<!-- 	
+        <div class="row align-spaced">
+            <div class=" small-6 medium-3 columns">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="/nl-be/categories/micro-brewery.html" hreflang="nl">
+                            <img src="/img/micro-brewery.jpg">
+                        </a>
+                    </div>
+                    <div class="card-section">
+                        <h4>Microbrouwerij</h4>
+                        <p>Producent van artisanaal / lokaal bier</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" small-6 medium-3 columns">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="/nl-be/categories/organic-fruits-vegetables.html" hreflang="nl">
+                            <img src="/img/fruit.jpeg">
+                        </a>
+                    </div>
+                    <div class="card-section">
+                        <h4>Bio groenten &amp; fruit</h4>
+                        <p>Producent / verkoper van bio / lokaal / fair trade groenten &amp; fruit</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" small-6 medium-3 columns">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="/nl-be/categories/coffee.html" hreflang="nl">
+                            <img src="/img/coffee.jpeg">
+                        </a>
+                    </div>
+                    <div class="card-section">
+                        <h4>Fair koffie</h4>
+                        <p>Brander / verkoper van koffie en/of thee</p>
+                    </div>
+                </div>
+            </div>
+            <div class=" small-6 medium-3 columns">
+                <div class="card">
+                    <div class="card-image">
+                        <a href="/nl-be/categories/custom.html" hreflang="nl">
+                            <img src="/img/create.jpg">
+                        </a>
+                    </div>
+                    <div class="card-section">
+                        <h4>Kies jouw categorie</h4>
+                        <p>Niet de categorie gevonden die je zocht ? Doe je eigen voorstel !</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ENGAGEMENT & DO MORE START -->
+    <div class="show-for-medium sri-section-home">
+        <div class="sri-section-text">
+            <h1>KLAAR VOOR MEER IMPACT ?</h1>
+            <h5>Verantwoord beleggen vanaf nu,</h5>
+            <p>geef ons uw mening, ondersteun onze initiatieven...</p>
+            <a class="button" href="/nl-be/do-more.html">Meer weten</a>
+        </div>
+    </div>
+    <div class="show-for-small-only sri-section-small">
+        <div class="sri-section-text">
+            <h1>KLAAR VOOR MEER IMPACT ?</h1>
+            <h5>Verantwoord beleggen vanaf nu,</h5>
+            <p>geef ons uw mening, ondersteun onze initiatieven...</p>
+            <a class="button" href="/nl-be/do-more.html">Meer weten</a>
+        </div>
+    </div>
+    <!-- ENGAGEMENT & DO MORE END -->
+    <!-- CONTEST START -->
+    <!-- 	
 	<section class="quiz">
 		<div class="row align-center">
 			<div class="small-12 medium-6 large-6 column">
@@ -313,87 +383,77 @@
 		</div>
 	</section>
 
- --><!-- CONTEST END -->		
+ -->
+    <!-- CONTEST END -->
+    <!-- MODALS START -->
+    <div class="reveal-overlay">
+        <!-- QUICK FACT 1 -->
+        <div class="reveal" id="modal-quickfact-1" data-reveal>
+            <h4>Wij zijn nog niet perfect, maar boeken elke dag vooruitgang door het werk van NGO's te beantwoorden met een verbeterd sectoraal beleid.</h4>
+            <p class="lead">NGO's oefenen veel druk uit op de banken, dit is een van hun taken. Deze druk dwingt ons om ons beleid alsmaar te verstrengen. Op dit moment zijn 212 bedrijven uitgesloten en 85 werden onder toezicht geplaatst.
+            </p>
+            <p>Bijvoorbeeld, na onthullingen van de effecten op lokale gemeenschappen rond de Dakota pijplijn, stelde BNPP Fortis onafhankelijke deskundigen aan op het gebied van de mensenrechten. Na hun verslag en na raadpleging van alle betrokken partijen, heeft de groep besloten om zich terug te trekken uit het project.</p>
+            <button class="close-button" data-close aria-label="Close" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <!-- QUICK FACT 2 -->
+        <div class="reveal" id="modal-quickfact-2" data-reveal>
+            <h4>BNP Paribas stemt ermee in om de Duurzame OntwikkelingsDoelstellingen (DOD) van de Verenigde Naties na te leven! </h4>
+            <p class="lead">Op 18 oktober 2016 ondertekende BNP Paribas Fortis het "Belgisch Charter van de DOD" en is vastbesloten bij te dragen om 17 DOD te behalen, zowel in de wijze waarop ze haar bancaire activiteiten uitoefent als door specifieke CSR-initiatieven. </p>
+            <p>De 17 ODD bestrijken een breed scala van onderwerpen, gaande van klimaatverandering tot gezondheid, via werkgelegenheid, innovatie en zelfs de ontwikkeling van transparante instellingen en rechtvaardigheid voor iedereen. </p>
+            <button class="close-button" data-close aria-label="Close" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <!-- QUICK FACT 3 -->
+        <div class="reveal" id="modal-quickfact-3" data-reveal>
+            <h4>Ons doel is om een  "CSR totaalbeleid" te bewerkstelligen.</h4>
+            <p class="lead">Onze Bank heeft de ambitie om erkend te worden als duurzame bank. Dit is de reden waarom het toezicht op de directe effecten van onze eigen activiteiten op de omgeving essentieel is geworden.</p>
+            <button class="close-button" data-close aria-label="Close" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <!-- QUICK FACT 4 -->
+        <div class="reveal" id="modal-quickfact-4" data-reveal>
+            <h4>De Bank is een belangrijke speler in de maatschappij, en onze eerste verantwoordelijkheid is de financiering van ethische economie.</h4>
+            <p class="lead">Als bank hebben we een belangrijke rol te spelen, en de manier waarop wij zaken doen is essentieel. Onze belangrijkste taak is een ethische bank te zijn en een kwalitatieve bank.</p>
+            <p>We hebben een gedragscode vastgelegd en doorgevoerd, die de ethische bedrijfspraktijken moet garanderen. Alle medewerkers van de Groep (189.000 werknemers) kregen opleiding over deze gedragscode.</p>
+            <button class="close-button" data-close aria-label="Close" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <!-- QUICK FACT 5 -->
+        <div class="reveal" id="modal-quickfact-5" data-reveal>
+            <h4>NGO's zien wel degelijk de inspanningen die we doen. </h4>
+            <p class="lead">SOS Faim, een bijzonder actieve ngo, publiceerde dit positieve artikel over sectoraal landbouwbeleid. Het artikel benadrukt ons engagement om de situatie te verbeteren.</p>
+            <a href="https://www.sosfaim.be/news/bnp-paribas-finalement-sengage-la-campagne-contre-la-speculation-financiere-couronnee-de-succes/">Lire l'article</a>
+            <button class="close-button" data-close aria-label="Close" type="button">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+    <!-- MODALS END -->
+    <script src="/js/vendor/jquery.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPyCBAfPmPUcjzYYSll68iWSaLBZJ1uFI&v=3.exp&sensor=false">
+    </script>
+    <script src="/js/vendor/what-input.js"></script>
+    <script src="/js/vendor/foundation.min.js"></script>
+    <script src="/js/app.js"></script>
+    <!-- Smooth scrolling -->
+    <script src="/js/smoothscroll.js"></script>
+    <script>
+    // add event listener on load
+    window.addEventListener('load', function() {
+        // scroll into view
+        document.querySelector('.js-scroll').addEventListener('click', function(e) {
+            e.preventDefault();
+            document.querySelector('.map').scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+    </script>
+</body>
 
-		<!-- MODALS START -->
-		<div class="reveal-overlay">
-		<!-- QUICK FACT 1 -->
-		  <div class="reveal" id="modal-quickfact-1" data-reveal>
-		    <h4>Wij zijn nog niet perfect, maar boeken elke dag vooruitgang door het werk van NGO's te beantwoorden met een verbeterd sectoraal beleid.</h4>
-		    <p class="lead">NGO's oefenen veel druk uit op de banken, dit is een van hun taken. Deze druk dwingt ons om ons beleid alsmaar te verstrengen. 
-						Op dit moment zijn 212 bedrijven uitgesloten en 85 werden onder toezicht geplaatst. 
-						</p>
-		    <p>Bijvoorbeeld, na onthullingen van de effecten op lokale gemeenschappen rond de Dakota pijplijn, 
-						stelde BNPP Fortis onafhankelijke deskundigen aan op het gebied van de mensenrechten. 
-						Na hun verslag en na raadpleging van alle betrokken partijen, 
-						heeft de groep besloten om zich terug te trekken uit het project.</p>
-		    <button class="close-button" data-close aria-label="Close" type="button">
-		      <span aria-hidden="true">&times;</span>
-		    </button>
-		  </div>
-
-		<!-- QUICK FACT 2 -->
-		  <div class="reveal" id="modal-quickfact-2" data-reveal>
-		    <h4>BNP Paribas stemt ermee in om de Duurzame OntwikkelingsDoelstellingen (DOD) van de Verenigde Naties na te leven! </h4>
-		    <p class="lead">Op 18 oktober 2016 ondertekende BNP Paribas Fortis het "Belgisch Charter van de DOD" en is vastbesloten bij te dragen om 17 DOD te behalen, zowel in de wijze waarop ze haar bancaire activiteiten uitoefent als door specifieke CSR-initiatieven. </p>
-		    <p>De 17 ODD bestrijken een breed scala van onderwerpen, gaande van klimaatverandering tot gezondheid, via werkgelegenheid, innovatie en zelfs de ontwikkeling van transparante instellingen en rechtvaardigheid voor iedereen. </p>
-		    <button class="close-button" data-close aria-label="Close" type="button">
-		      <span aria-hidden="true">&times;</span>
-		    </button>
-		  </div>
-	
-		<!-- QUICK FACT 3 -->
-		  <div class="reveal" id="modal-quickfact-3" data-reveal>
-		    <h4>Ons doel is om een  "CSR totaalbeleid" te bewerkstelligen.</h4>
-		    <p class="lead">Onze Bank heeft de ambitie om erkend te worden als duurzame bank. Dit is de reden waarom het toezicht op de 
-					  directe effecten van onze eigen activiteiten op de omgeving essentieel is geworden.</p>
-		    <button class="close-button" data-close aria-label="Close" type="button">
-		      <span aria-hidden="true">&times;</span>
-		    </button>
-		  </div>	
-			
-		<!-- QUICK FACT 4 -->
-		  <div class="reveal" id="modal-quickfact-4" data-reveal>
-		    <h4>De Bank is een belangrijke speler in de maatschappij, en onze eerste verantwoordelijkheid is de financiering van ethische economie.</h4>
-		    <p class="lead">Als bank hebben we een belangrijke rol te spelen, en de manier waarop wij zaken doen is essentieel. Onze belangrijkste taak is een ethische bank te zijn en een kwalitatieve bank.</p>
-		    <p>We hebben een gedragscode vastgelegd en doorgevoerd, die de ethische bedrijfspraktijken moet garanderen. Alle medewerkers van de Groep (189.000 werknemers) kregen opleiding over deze gedragscode.</p>
-		    <button class="close-button" data-close aria-label="Close" type="button">
-		      <span aria-hidden="true">&times;</span>
-		    </button>
-		  </div>
-			
-		<!-- QUICK FACT 5 -->
-		  <div class="reveal" id="modal-quickfact-5" data-reveal>
-		    <h4>NGO's zien wel degelijk de inspanningen die we doen. </h4>
-		    <p class="lead">SOS Faim, een bijzonder actieve ngo, publiceerde dit positieve artikel over sectoraal landbouwbeleid. Het artikel benadrukt ons engagement om de situatie te verbeteren.</p>
-		    <a href="https://www.sosfaim.be/news/bnp-paribas-finalement-sengage-la-campagne-contre-la-speculation-financiere-couronnee-de-succes/">Lire l'article</a>
-		    <button class="close-button" data-close aria-label="Close" type="button">
-		      <span aria-hidden="true">&times;</span>
-		    </button>
-		  </div>	
-	
-		</div>
-
-		  <!-- MODALS END -->
-
-
-		<script src="/js/vendor/jquery.js"></script>
-    		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDPyCBAfPmPUcjzYYSll68iWSaLBZJ1uFI&v=3.exp&sensor=false">
-		</script>
-		<script src="/js/vendor/what-input.js"></script>
-		<script src="/js/vendor/foundation.min.js"></script>
-		<script src="/js/app.js"></script>
-		<!-- Smooth scrolling -->
-		<script src="/js/smoothscroll.js"></script>
-		<script>
-		    // add event listener on load
-		    window.addEventListener('load', function() {
-		      // scroll into view
-		      document.querySelector('.js-scroll').addEventListener('click', function(e) {
-			e.preventDefault();
-			document.querySelector('.map').scrollIntoView({ behavior: 'smooth' });
-		      });
-		    });
-		  </script>
-	</body>
 </html>
