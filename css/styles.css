@@ -258,6 +258,9 @@ ul.dropdown.menu {
     position: relative;
 }
 
+a, a:visited, a:hover, a:active {
+  color: inherit;
+}
 
 /* SECTIONS */
 
