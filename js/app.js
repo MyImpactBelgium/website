@@ -4,6 +4,7 @@ $( document ).ready( function() {
 
   var buttonConfirmVoteMicroB = $('#button-confirm-vote-micro-b');
   var buttonConfirmVoteCoffee = $('#button-confirm-vote-coffee');
+  var confirmVote = $('#confirm-vote');
 
 
   buttonConfirmVoteMicroB.click(function(event) {
@@ -12,8 +13,8 @@ $( document ).ready( function() {
       'Vote button',
       'fr-micro-brewery',
       'FR WEBSITE',
-      {nonInteraction: true});  
-      
+      {nonInteraction: true});
+      confirmVote.foundation('open');   
   });
 
   buttonConfirmVoteCoffee.click(function(event) {
@@ -22,8 +23,8 @@ $( document ).ready( function() {
       'Vote button',
       'fr-coffee',
       'FR WEBSITE',
-      {nonInteraction: true});  
-
+      {nonInteraction: true}); 
+      confirmVote.foundation('open'); 
   });  
 
   var linkQuickfact1 = $('#link-quickfact-1');
