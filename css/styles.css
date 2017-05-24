@@ -344,12 +344,14 @@ section.category-description {
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
+    color: white;
 }
 
+/*
 .button.success,
 .button.success:hover {
     color: white;
-}
+}*/
 
 .pin {
     position: absolute;
