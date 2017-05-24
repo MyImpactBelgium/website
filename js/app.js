@@ -18,7 +18,7 @@ $(document).ready(function() {
             'event',
             'vote button',
             'micro brewery',
-            'FR website', { nonInteraction: true });
+            'FR website', { nonInteraction: 0 });
         confirmVote.foundation('open');
     });
 
@@ -27,7 +27,7 @@ $(document).ready(function() {
             'event',
             'vote button',
             'coffee',
-            'FR website', { nonInteraction: true });
+            'FR website', { nonInteraction: 0 });
         confirmVote.foundation('open');
     });
 
@@ -36,7 +36,7 @@ $(document).ready(function() {
             'event',
             'vote button',
             'fruit brewery',
-            'FR website', { nonInteraction: true });
+            'FR website', { nonInteraction: 0 });
         confirmVote.foundation('open');
     });
 
@@ -45,7 +45,7 @@ $(document).ready(function() {
             'event',
             'vote button',
             'custom FR',
-            'FR website', { nonInteraction: true });
+            'FR website', { nonInteraction: 0 });
         confirmVote.foundation('open');
     });
 
@@ -54,7 +54,7 @@ $(document).ready(function() {
             'event',
             'vote button',
             'micro brewery',
-            'NL website', { nonInteraction: true });
+            'NL website', { nonInteraction: 0 });
         confirmVote.foundation('open');
     });
 
@@ -63,7 +63,7 @@ $(document).ready(function() {
             'event',
             'vote button',
             'coffee',
-            'NL website', { nonInteraction: true });
+            'NL website', { nonInteraction: 0 });
         confirmVote.foundation('open');
     });
 
@@ -72,7 +72,7 @@ $(document).ready(function() {
             'event',
             'vote button',
             'fruit brewery NL',
-            'NL website', { nonInteraction: true });
+            'NL website', { nonInteraction: 0 });
         confirmVote.foundation('open');
     });
 
@@ -81,7 +81,7 @@ $(document).ready(function() {
             'event',
             'vote button',
             'custom',
-            'NL website', { nonInteraction: true });
+            'NL website', { nonInteraction: 0 });
         confirmVote.foundation('open');
     });
 
@@ -274,6 +274,11 @@ $(document).ready(function() {
 
         google.maps.event.addListener(roomerMarker, 'click', function() {
             roomerInfowindow.open(map, roomerMarker);
+            ga('send',
+            'event',
+            'map interaction',
+            'click on marker',
+            '', { nonInteraction: 0 });
         });
 
         /*  SAO BLOCK */
@@ -296,6 +301,11 @@ $(document).ready(function() {
 
         google.maps.event.addListener(SaoMarker, 'click', function() {
             saoInfowindow.open(map, SaoMarker);
+            ga('send',
+            'event',
+            'map interaction',
+            'click on marker',
+            '', { nonInteraction: 0 });
         });
 
         /*  ALIX BLOCK */
@@ -318,6 +328,11 @@ $(document).ready(function() {
 
         google.maps.event.addListener(AlixMarker, 'click', function() {
             alixInfowindow.open(map, AlixMarker);
+            ga('send',
+            'event',
+            'map interaction',
+            'click on marker',
+            '', { nonInteraction: 0 });
         });
 
         /*  ROGGE BLOCK */
@@ -340,6 +355,11 @@ $(document).ready(function() {
 
         google.maps.event.addListener(RoggeMarker, 'click', function() {
             roggeInfowindow.open(map, RoggeMarker);
+            ga('send',
+            'event',
+            'map interaction',
+            'click on marker',
+            '', { nonInteraction: 0 });
         });
 
         /*  HA BLOCK */
@@ -362,6 +382,11 @@ $(document).ready(function() {
 
         google.maps.event.addListener(HaMarker, 'click', function() {
             haInfowindow.open(map, HaMarker);
+            ga('send',
+            'event',
+            'map interaction',
+            'click on marker',
+            '', { nonInteraction: 0 });
         });
 
         /*  JANS BLOCK */
@@ -384,6 +409,11 @@ $(document).ready(function() {
 
         google.maps.event.addListener(JansMarker, 'click', function() {
             jansInfowindow.open(map, JansMarker);
+            ga('send',
+            'event',
+            'map interaction',
+            'click on marker',
+            '', { nonInteraction: 0 });
         });
 
         /*  PAIN BLOCK */
@@ -406,6 +436,11 @@ $(document).ready(function() {
 
         google.maps.event.addListener(PainMarker, 'click', function() {
             painInfowindow.open(map, PainMarker);
+            ga('send',
+            'event',
+            'map interaction',
+            'click on marker',
+            '', { nonInteraction: 0 });
         });
 
         /*  HINK BLOCK */
@@ -428,6 +463,11 @@ $(document).ready(function() {
 
         google.maps.event.addListener(HinkMarker, 'click', function() {
             hinkInfowindow.open(map, HinkMarker);
+            ga('send',
+            'event',
+            'map interaction',
+            'click on marker',
+            '', { nonInteraction: 0 });
         });
 
         /*  SEVENS BLOCK */
@@ -450,6 +490,11 @@ $(document).ready(function() {
 
         google.maps.event.addListener(SevensMarker, 'click', function() {
             sevensInfowindow.open(map, SevensMarker);
+            ga('send',
+            'event',
+            'map interaction',
+            'click on marker',
+            '', { nonInteraction: 0 });
         });
 
 
